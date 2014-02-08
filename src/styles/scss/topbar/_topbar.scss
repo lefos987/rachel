@@ -1,0 +1,11 @@
+@import "../variables";
+
+.topbar {
+	height: $topbarH;
+	padding: 0 $gridPadding;
+	background: red;
+
+	.topbar-nav-item {
+		margin-right: 50px;
+	}
+}

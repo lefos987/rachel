@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+		<title>rachel</title>
+		<base href="/">
+		<link rel="stylesheet" type="text/css" href="app.css" media="screen, projector, print">
+		<script src="vendor/foundation/js/vendor/modernizr.js"></script>
+	</head>
+
+	<body>
+		
+		<header class="topbar row">
+			<div class="tobar-logo large-6 columns">MyLogo</div>
+			<ng-include src="'app/navigation/navigation.view.html'"></ng-include>
+		</header>
+		<div class="main">
+			<section class="hero">
+				<h4 class="hero-text">I design user experiences that promote your business</h4>
+				<ul class="hero-controls inline-list">
+					<li class="hero-controls-item"><</li>
+					<li class="hero-controls-item">></li>
+				</ul>
+			</section>
+			<!-- ng-view for main content -->
+			<div class="row wrapper" ng-view=""></div>
+		</div>
+
+		<!-------------------------------- Scripts --------------------------------------------->
+
+		<!----------------------------  Vendor Scripts  ---------------------------------------->
+		<script type="text/javascript" src="vendor/angular/angular.min.js"></script>
+		<script type="text/javascript" src="vendor/angular-route/angular-route.min.js"></script>
+		
+		
+
+		<!----------------------------  Application Script  ------------------------------------>
+		<script type="text/javascript" src="app.js"></script>
+	</body>
+</html>
