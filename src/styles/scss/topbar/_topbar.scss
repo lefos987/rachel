@@ -1,9 +1,9 @@
 @import "../variables";
 
-.topbar {
+.topbar, .footer {
 	height: $topbarH;
 	padding: 0 $gridPadding;
-	background: red;
+	background: white;
 
 	.topbar-nav-item {
 		margin-right: 50px;

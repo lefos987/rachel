@@ -43,4 +43,29 @@ angular.module('navigation', [])
 			{name: 'Information', url: ''},
 			{name: 'Contact', url: ''}
 		];
+	})
+
+	/**
+	 * @ngdoc function
+	 * @name ng.directive:navigation
+	 * @function
+	 *
+	 * @description
+	 * [add a description]
+	 *
+	 * @example
+	   <doc:example>
+	     <doc:source>
+	       <navigation></navigation>
+	     </doc:source>
+	   </doc:example>
+	 */
+	.directive('navigation', function () {
+		return {
+			templateUrl: 'app/navigation/navigation.view.html',
+			restrict: 'E',
+			scope: {
+				navItems: '='
+			}
+		};
 	});

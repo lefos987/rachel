@@ -1,0 +1,39 @@
+@import "../variables";
+
+.hero {
+	width: 100%;
+	height: $heroH;
+	position: relative;
+	background: purple;
+
+	.hero-text {
+		position: absolute;
+		top: 35%;
+		left: 10%;
+		padding: 5px 20px;
+		font-size: 20px;
+		border: 1px solid black;
+		border-radius: 30px;
+		background: gold;
+	}
+
+	.hero-controls {
+		position: absolute;
+		bottom: 15%;
+		right: 10%;
+		margin: 0;
+
+		.hero-controls-item {
+			padding: 0px 10px;
+			margin: 0;
+			background: white;
+			color: #888;
+			border: 1px solid black;
+			font-size: 22px;
+			font-weight: bold;
+			&:hover {
+				background: #999;
+			}
+		}
+	}
+}
