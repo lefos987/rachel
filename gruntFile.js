@@ -334,9 +334,7 @@ module.exports = function (grunt) {
 		'uglify',
 		'usemin',
 		'ngdocs',
-		'karma:build',
-		'plato',
-		'coverage'
+		'plato'
 	]);
 
 };

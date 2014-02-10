@@ -1,0 +1,26 @@
+.portfolio {
+	margin-top: 40px;
+	
+	.portfolio-list-item {
+		height: 250px;
+
+		.portfolio-list-item-header {
+			background: #999;
+			display: block;
+			height: 100%;
+			width: 100%;
+			color: black;
+			font-size: 18px;
+			padding: 10px 15px;
+
+			&:hover {
+				background: #EEE;
+				border-top: 5px solid black;
+			}
+		}
+	}
+
+	.controls {
+		font-size: 32px;
+	}
+}

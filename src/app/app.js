@@ -1,11 +1,19 @@
 'use strict';
 
-angular.module('app', ['templates', 'common', 'ngRoute', 'navigation', 'hero'])
+angular.module('app', ['templates', 'common', 'ngRoute', 'navigation', 'hero', 'info', 'portfolio'])
 	.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
 		$routeProvider
 			.when('/', {
-				templateUrl: 'app/app.view.html',
-				controller: 'AppCtrl'
+				templateUrl: 'app/portfolio/portfolio.view.html',
+				controller: 'PortfolioCtrl'
+			})
+			.when('/concepts', {
+				templateUrl: 'app/portfolio/concepts/concepts.view.html',
+				controller: 'ConceptsCtrl'
+			})
+			.when('/concepts/:conceptId', {
+				templateUrl: 'app/portfolio/concepts/concept-details.view.html',
+				controller: 'ConceptDetailsCtrl'
 			})
 			.otherwise({
 				redirectTo: '/'
@@ -13,7 +21,5 @@ angular.module('app', ['templates', 'common', 'ngRoute', 'navigation', 'hero'])
 		$locationProvider.html5Mode(true);
 	}])
 	.controller('AppCtrl', ['$scope', function ($scope) {
-			$scope.message = 'Hello World';
-			$scope.templateUrl = 'app/app.view.html';
-		}
-	]);
+		$scope.message = 'Hello World';
+	}]);

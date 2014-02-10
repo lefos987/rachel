@@ -20,8 +20,7 @@ angular.module('navigation', [])
 	 * [add a description]
 	 *
 	 */
-	.controller('NavigationCtrl', ['$scope', 'navigationFactory',
-		function ($scope, navigationFactory) {
+	.controller('NavigationCtrl', ['$scope', 'navigationFactory', function ($scope, navigationFactory) {
 		
 		$scope.navigation = navigationFactory;
 	}])
@@ -60,12 +59,20 @@ angular.module('navigation', [])
 	     </doc:source>
 	   </doc:example>
 	 */
-	.directive('navigation', function () {
+	.directive('navigation', ['$location', '$anchorScroll', function ($location, $anchorScroll) {
 		return {
 			templateUrl: 'app/navigation/navigation.view.html',
 			restrict: 'E',
 			scope: {
 				navItems: '='
+			},
+			controller: function ($scope) {
+				$scope.goToHash = function (h) {
+					var hash = h.toLowerCase();
+					console.log(hash);
+					$location.hash(hash);
+					$anchorScroll();
+				};
 			}
 		};
-	});
+	}]);

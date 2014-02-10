@@ -1,0 +1,22 @@
+<div class="information row" ng-controller="InfoCtrl">
+	<div class="why-me large-7 columns">
+		<h4>Why me?</h4>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, pariatur, dolorum, iure blanditiis dolores laborum esse eum sit nesciunt beatae voluptas inventore laboriosam magni iste porro asperiores temporibus. Quae, unde!
+		</p>
+		<h5>Let me help</h5>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, veritatis, sapiente ipsum voluptatum velit nobis a corporis voluptatibus veniam facilis aliquid dicta qui quod dolorem est reiciendis explicabo. Recusandae, quis.
+		</p>
+		<div class="row">
+			<img class="large-4 columns" src="assets/img/rachel.png" alt="">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		</div>
+	</div>
+	<div class="skills large-offset-1 large-4 columns">
+		<h4 class="skills-header">Skills and Services</h4>
+		<ul class="skills-list no-bullet">
+			<li class="skills-item" ng-repeat="skill in skills">{{skill.name}}</li>
+		</ul>
+	</div>
+</div>

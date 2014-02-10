@@ -1,0 +1,19 @@
+.information {
+	background: #EEE;
+	padding: 5% 10%;
+
+	.skills {
+		padding: 20px;
+		background: white;
+		border-top: 5px solid black;
+
+		.skills-header {
+			font-weight: bold;
+			margin-bottom: 40px;
+		}
+	}
+
+	img {
+		height: 200px;
+	}
+}
