@@ -3,6 +3,7 @@
 @import "hero/hero";
 @import "info/info";
 @import "portfolio/portfolio";
+@import "contact/contact";
 @import "footer/footer";
 
 html, body {
@@ -15,5 +16,23 @@ html, body {
 	height: 100%;
 	@media #{$large-up} {
 		padding: 0 $gutter;
+	}
+	@media #{$xxlarge-up} {
+		padding: 0 ($gutter * 2);
+	}
+	
+	.section {
+		min-height: 100%;
+		background: white;
+		margin: 0;
+		padding: $gutter ($gutter * 2);
+
+		&.information {
+			background: $lightGrey;
+		}
+	}
+	.section-header {
+		color: $blue;
+		margin-bottom: 40px;
 	}
 }

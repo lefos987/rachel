@@ -1,9 +1,28 @@
-angular.module('templates', ['app/app.view.html', 'app/hero/hero.view.html', 'app/info/info.view.html', 'app/navigation/navigation.view.html', 'app/portfolio/concepts/concept-details.view.html', 'app/portfolio/concepts/concepts.view.html', 'app/portfolio/portfolio.view.html']);
+angular.module('templates', ['app/app.view.html', 'app/contact/contact.view.html', 'app/hero/hero.view.html', 'app/info/info.view.html', 'app/navigation/navigation.view.html', 'app/portfolio/concepts/concept-details.view.html', 'app/portfolio/concepts/concepts.view.html', 'app/portfolio/portfolio.view.html']);
 
 angular.module('app/app.view.html', []).run(['$templateCache', function($templateCache) {
 	'use strict';
 	$templateCache.put('app/app.view.html',
 		'');
+}]);
+
+angular.module('app/contact/contact.view.html', []).run(['$templateCache', function($templateCache) {
+	'use strict';
+	$templateCache.put('app/contact/contact.view.html',
+		'<div id="contact" class="contact section row">\n' +
+		'	<h4 class="section-header">Get in touch</h4>\n' +
+		'	<p class="contact-text large-6 medium-6 small-12 columns">\n' +
+		'		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, eaque, eveniet impedit cumque odio eos delectus iusto iure architecto aliquid libero aliquam sequi quia nam magnam animi distinctio ad neque.\n' +
+		'	</p>\n' +
+		'	<form class="contact-form large-6 medium-6 small-12 columns">\n' +
+		'		<input type="text" placeholder="Name">\n' +
+		'		<input type="email" placeholder="Email">\n' +
+		'		<input type="tel" placeholder="Phone">\n' +
+		'		<input type="text" placeholder="Address">\n' +
+		'		<textarea name="message" id="message" class="message" placeholder="Message"></textarea>\n' +
+		'		<button class="btn-send">Send</button>\n' +
+		'	</form>\n' +
+		'</div>');
 }]);
 
 angular.module('app/hero/hero.view.html', []).run(['$templateCache', function($templateCache) {
@@ -21,9 +40,9 @@ angular.module('app/hero/hero.view.html', []).run(['$templateCache', function($t
 angular.module('app/info/info.view.html', []).run(['$templateCache', function($templateCache) {
 	'use strict';
 	$templateCache.put('app/info/info.view.html',
-		'<div id="information" class="information row" ng-controller="InfoCtrl">\n' +
+		'<div id="information" class="information section row" ng-controller="InfoCtrl">\n' +
 		'	<div class="why-me large-7 columns">\n' +
-		'		<h4 class="why-me-header">Why me?</h4>\n' +
+		'		<h4 class="section-header">Why me?</h4>\n' +
 		'		<p>\n' +
 		'			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, pariatur, dolorum, iure blanditiis dolores laborum esse eum sit nesciunt beatae voluptas inventore laboriosam magni iste porro asperiores temporibus. Quae, unde!\n' +
 		'		</p>\n' +
@@ -37,7 +56,7 @@ angular.module('app/info/info.view.html', []).run(['$templateCache', function($t
 		'		</div>\n' +
 		'	</div>\n' +
 		'	<div class="skills large-offset-1 large-4 columns">\n' +
-		'		<h4 class="skills-header">Skills and Services</h4>\n' +
+		'		<h4 class="section-header">Skills and Services</h4>\n' +
 		'		<ul class="skills-list no-bullet">\n' +
 		'			<li class="skills-item" ng-repeat="skill in skills">{{skill.name}}</li>\n' +
 		'		</ul>\n' +

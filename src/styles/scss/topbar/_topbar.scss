@@ -8,7 +8,9 @@
 	@media #{$large-up} {
 		margin: 0 $gutter;
 	}
-	
+	@media #{$xxlarge-up} {
+		margin: 0 ($gutter * 2);
+	}
 	.topbar-logo {
 		width: 64px;
 		margin-bottom: 6px;

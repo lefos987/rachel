@@ -1,0 +1,32 @@
+.contact {
+	
+	.contact-text {
+		padding-left: 0;
+	}
+
+	.contact-form {
+		padding-right: 0; 
+	}
+
+	.message {
+		height: 100px;
+	}
+	input {
+		width: 80%;
+	}
+
+	input, textarea {
+		color: black;
+
+		&:focus {
+			background: $lightBlue;
+		}
+	}
+
+	.btn-send {
+		background: $blue;
+		padding: 10px 15px;
+		margin-top: 20px;
+	}
+
+}
