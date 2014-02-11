@@ -1,9 +1,15 @@
-<a href="/" class="controls large-1 columns"><</a>
-<ul class="portfolio-list large-10 columns small-block-grid-3">
-  <li class="portfolio-list-item" ng-repeat="concept in concepts">
-  	<a class="portfolio-list-item-header" href="{{concept.url}}">
-  		{{concept.name}}
-  	</a>
-  </li>
-</ul>
-<a href="" class="controls large-1 columns">></a>
+<div class="concepts row">
+	<div class="small-1 columns">
+		<a href="/" class="controls prev"></a>
+	</div>
+	<ul class="portfolio-list small-10 columns small-block-grid-1 medium-block-grid-2 large-block-grid-3">
+	  <li class="portfolio-list-item" ng-repeat="concept in concepts">
+	  	<a class="portfolio-list-item-header" href="{{concept.url}}">
+	  		{{concept.name}}
+	  	</a>
+	  </li>
+	</ul>
+	<div class="small-1 columns">
+		<a href="" class="controls next"></a>	
+	</div>
+</div>

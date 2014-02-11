@@ -1,4 +1,4 @@
-.portfolio {
+.portfolio-list {
 	
 	.portfolio-list-item {
 		height: 250px;
@@ -18,8 +18,61 @@
 			}
 		}
 	}
+}
 
-	.controls {
-		font-size: 32px;
+.controls {
+	display: block;
+	background-image: url('/assets/img/IconsArrows.png');
+	height: 64px;
+	padding: 0;
+
+	&.prev {
+		background-position: -225px 10px;
 	}
+	&.next {
+		background-position: -375px 10px;
+	}
+}
+
+.portfolio-details {
+	position: relative;
+	padding: 0;
+
+	.client-details {
+		width: 33%;
+		position: absolute;
+		right: 0;
+		top: -60px;
+		border-top: 5px solid $blue;
+	}
+	
+	.client-details-header {
+		padding: 10px 0 10px 10px;
+		display: inline-block;
+	}
+	
+	.client-details-text {
+		background-color:rgba(255, 255, 255 ,0.6);
+		padding: 20px 0 20px 10px;
+	
+		p {
+			z-index: 10;
+		}
+	}
+
+	.btnToggleUp, .btnToggleDown {
+		display: inline-block;
+		height: 24px;
+		width: 40px;
+		margin: 15px 5px 0 0;
+		float: right;
+		background-image: url('/assets/img/IconsArrows.png');
+	}
+	.btnToggleUp {
+		background-position: -130px 0px;
+	}
+	.btnToggleDown {
+		background-position: -175px 0px;
+	}
+
 }

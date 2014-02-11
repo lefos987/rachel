@@ -3,12 +3,17 @@
 	padding: 10px ($gutter * 2);
 	border-top: 5px solid $blue;
 
+	@media #{$small-only} {
+		padding: 10px;
+	}
+
 	.footer-text, .sm-list  {
 		display: inline-block;
 		margin: 0;
 	}
 
 	.footer-text {
+		font-size: 10px;
 		padding: 4px 0;
 	}
 

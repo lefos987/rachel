@@ -30,6 +30,11 @@ html, body {
 	.section-header {
 		color: $blue;
 		margin-bottom: 40px;
+
+		&.client-details-header {
+			margin-bottom: 0px;
+			text-transform: capitalize;
+		}
 	}
 
 	info, contact, #portfolio{

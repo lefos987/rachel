@@ -77,26 +77,42 @@ angular.module('app/navigation/navigation.view.html', []).run(['$templateCache',
 angular.module('app/portfolio/concepts/concept-details.view.html', []).run(['$templateCache', function($templateCache) {
 	'use strict';
 	$templateCache.put('app/portfolio/concepts/concept-details.view.html',
-		'<a href="/concepts" class="controls large-1 columns"><</a>\n' +
-		'<div class="large-10 columns">\n' +
-		'	<h4 class="right">{{title}}</h4>\n' +
+		'<div class="large-1 columns">\n' +
+		'	<a href="/" class="controls prev"></a>\n' +
+		'</div>\n' +
+		'<div class="portfolio-details large-10 columns">\n' +
+		'	<div class="client-details right">\n' +
+		'		<h4 class="section-header client-details-header">{{title}}</h4>\n' +
+		'		<a href="" ng-class="{btnToggleUp: show, btnToggleDown: !show}" ng-click="toggle()"></a>\n' +
+		'		<div class="client-details-text" ng-if="show">\n' +
+		'			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, sunt, tempore, voluptate ad quasi molestias sint iure inventore nostrum minus repellendus temporibus nisi eius quia omnis labore voluptatibus harum vel.</p>\n' +
+		'		</div>	\n' +
+		'	</div>\n' +
 		'	<div style="height: 400px; width: 100%; background: pink; overflow: hidden;" >a</div>\n' +
 		'</div>\n' +
-		'<a href="" class="controls large-1 columns">></a>');
+		'<div class="large-1 columns">\n' +
+		'	<a href="/" class="controls next"></a>\n' +
+		'</div>');
 }]);
 
 angular.module('app/portfolio/concepts/concepts.view.html', []).run(['$templateCache', function($templateCache) {
 	'use strict';
 	$templateCache.put('app/portfolio/concepts/concepts.view.html',
-		'<a href="/" class="controls large-1 columns"><</a>\n' +
-		'<ul class="portfolio-list large-10 columns small-block-grid-3">\n' +
-		'  <li class="portfolio-list-item" ng-repeat="concept in concepts">\n' +
-		'  	<a class="portfolio-list-item-header" href="{{concept.url}}">\n' +
-		'  		{{concept.name}}\n' +
-		'  	</a>\n' +
-		'  </li>\n' +
-		'</ul>\n' +
-		'<a href="" class="controls large-1 columns">></a>');
+		'<div class="concepts row">\n' +
+		'	<div class="small-1 columns">\n' +
+		'		<a href="/" class="controls prev"></a>\n' +
+		'	</div>\n' +
+		'	<ul class="portfolio-list small-10 columns small-block-grid-1 medium-block-grid-2 large-block-grid-3">\n' +
+		'	  <li class="portfolio-list-item" ng-repeat="concept in concepts">\n' +
+		'	  	<a class="portfolio-list-item-header" href="{{concept.url}}">\n' +
+		'	  		{{concept.name}}\n' +
+		'	  	</a>\n' +
+		'	  </li>\n' +
+		'	</ul>\n' +
+		'	<div class="small-1 columns">\n' +
+		'		<a href="" class="controls next"></a>	\n' +
+		'	</div>\n' +
+		'</div>');
 }]);
 
 angular.module('app/portfolio/portfolio.view.html', []).run(['$templateCache', function($templateCache) {
