@@ -9,7 +9,7 @@ angular.module('app/app.view.html', []).run(['$templateCache', function($templat
 angular.module('app/contact/contact.view.html', []).run(['$templateCache', function($templateCache) {
 	'use strict';
 	$templateCache.put('app/contact/contact.view.html',
-		'<div id="contact" class="contact section row">\n' +
+		'<div class="contact section row">\n' +
 		'	<h4 class="section-header">Get in touch</h4>\n' +
 		'	<p class="contact-text large-6 medium-6 small-12 columns">\n' +
 		'		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, eaque, eveniet impedit cumque odio eos delectus iusto iure architecto aliquid libero aliquam sequi quia nam magnam animi distinctio ad neque.\n' +
@@ -40,7 +40,7 @@ angular.module('app/hero/hero.view.html', []).run(['$templateCache', function($t
 angular.module('app/info/info.view.html', []).run(['$templateCache', function($templateCache) {
 	'use strict';
 	$templateCache.put('app/info/info.view.html',
-		'<div id="information" class="information section row" ng-controller="InfoCtrl">\n' +
+		'<div class="information section row" ng-controller="InfoCtrl">\n' +
 		'	<div class="why-me large-7 columns">\n' +
 		'		<h4 class="section-header">Why me?</h4>\n' +
 		'		<p>\n' +
@@ -102,11 +102,13 @@ angular.module('app/portfolio/concepts/concepts.view.html', []).run(['$templateC
 angular.module('app/portfolio/portfolio.view.html', []).run(['$templateCache', function($templateCache) {
 	'use strict';
 	$templateCache.put('app/portfolio/portfolio.view.html',
-		'<ul class="portfolio-list small-block-grid-1 medium-block-grid-2 large-block-grid-3">\n' +
-		'  <li class="portfolio-list-item" ng-repeat="menu in menus">\n' +
-		'  	<a class="portfolio-list-item-header" href="{{menu.url}}">\n' +
-		'  		{{menu.name}}\n' +
-		'  	</a>\n' +
-		'  </li>\n' +
-		'</ul>');
+		'<div class="portfolio section row">\n' +
+		'	<ul class="portfolio-list small-block-grid-1 medium-block-grid-2 large-block-grid-3">\n' +
+		'	  <li class="portfolio-list-item" ng-repeat="menu in menus">\n' +
+		'	  	<a class="portfolio-list-item-header" href="{{menu.url}}">\n' +
+		'	  		{{menu.name}}\n' +
+		'	  	</a>\n' +
+		'	  </li>\n' +
+		'	</ul>\n' +
+		'</div>');
 }]);

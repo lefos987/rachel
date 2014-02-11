@@ -14,6 +14,7 @@ html, body {
 
 .main {
 	height: 100%;
+
 	@media #{$large-up} {
 		padding: 0 $gutter;
 	}
@@ -23,16 +24,21 @@ html, body {
 	
 	.section {
 		min-height: 100%;
-		background: white;
 		margin: 0;
 		padding: $gutter ($gutter * 2);
-
-		&.information {
-			background: $lightGrey;
-		}
 	}
 	.section-header {
 		color: $blue;
 		margin-bottom: 40px;
+	}
+
+	info, contact, #portfolio{
+		display: flex;
+		align-items: center;
+		min-height: 100%;
+		background: white;
+	}
+	info, contact {
+		background: $lightGrey;
 	}
 }
