@@ -1,0 +1,39 @@
+.footer {
+	background: white;
+	padding: 10px ($gutter * 2);
+	border-top: 5px solid $blue;
+
+	.footer-text, .sm-list  {
+		display: inline-block;
+		margin: 0;
+	}
+
+	.footer-text {
+		padding: 4px 0;
+	}
+
+	.twitter, .facebook, .linkedin {
+		width: 36px;
+		height: 36px;
+		margin-left: 5px;
+		background-image: url('/assets/img/IconsArrows.png');
+
+		a {
+			width: 36px;
+			height: 36px;
+			border-radius: 50%;
+		}
+	}
+
+	.linkedin {
+		background-position: 0px 0px;
+	}
+
+	.facebook {
+		background-position: -40px 0px;
+	}
+
+	.twitter {
+		background-position: -80px 0px;	
+	}
+}

@@ -1,5 +1,5 @@
 <ul class="topbar-nav inline-list right">
 	<li class="topbar-nav-item" ng-repeat="navItem in navItems">
-		<a href="{{navItem.url}}" ng-click="goToHash(navItem.name)">{{navItem.name}}</a>
+		<a href="{{navItem.url}}" scroll-to="{{navItem.name}}">{{navItem.name}}</a>
 	</li>
 </ul>

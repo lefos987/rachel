@@ -9,7 +9,7 @@ angular.module('app/app.view.html', []).run(['$templateCache', function($templat
 angular.module('app/hero/hero.view.html', []).run(['$templateCache', function($templateCache) {
 	'use strict';
 	$templateCache.put('app/hero/hero.view.html',
-		'<section class="hero">\n' +
+		'<section id="home" class="hero">\n' +
 		'	<h4 class="hero-text">I design user experiences that <span class="hero-text--dynamic">promote your business</span></h4>\n' +
 		'	<ul class="hero-controls inline-list">\n' +
 		'		<li class="hero-controls-item"><</li>\n' +
@@ -21,7 +21,7 @@ angular.module('app/hero/hero.view.html', []).run(['$templateCache', function($t
 angular.module('app/info/info.view.html', []).run(['$templateCache', function($templateCache) {
 	'use strict';
 	$templateCache.put('app/info/info.view.html',
-		'<div class="information row" ng-controller="InfoCtrl">\n' +
+		'<div id="information" class="information row" ng-controller="InfoCtrl">\n' +
 		'	<div class="why-me large-7 columns">\n' +
 		'		<h4 class="why-me-header">Why me?</h4>\n' +
 		'		<p>\n' +
@@ -50,7 +50,7 @@ angular.module('app/navigation/navigation.view.html', []).run(['$templateCache',
 	$templateCache.put('app/navigation/navigation.view.html',
 		'<ul class="topbar-nav inline-list right">\n' +
 		'	<li class="topbar-nav-item" ng-repeat="navItem in navItems">\n' +
-		'		<a href="{{navItem.url}}" ng-click="goToHash(navItem.name)">{{navItem.name}}</a>\n' +
+		'		<a href="{{navItem.url}}" scroll-to="{{navItem.name}}">{{navItem.name}}</a>\n' +
 		'	</li>\n' +
 		'</ul>');
 }]);

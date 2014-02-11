@@ -20,9 +20,11 @@ angular.module('navigation', [])
 	 * [add a description]
 	 *
 	 */
-	.controller('NavigationCtrl', ['$scope', 'navigationFactory', function ($scope, navigationFactory) {
+	.controller('NavigationCtrl', ['$scope', 'navigationFactory', '$location', '$anchorScroll',
+		function ($scope, navigationFactory, $location, $anchorScroll) {
 		
 		$scope.navigation = navigationFactory;
+
 	}])
 
 	/**
@@ -38,8 +40,8 @@ angular.module('navigation', [])
 	 */
 	.factory('navigationFactory', function () {
 		return [
-			{name: 'Portfolio', url: ''},
 			{name: 'Information', url: ''},
+			{name: 'Portfolio', url: ''},
 			{name: 'Contact', url: ''}
 		];
 	})
@@ -59,20 +61,24 @@ angular.module('navigation', [])
 	     </doc:source>
 	   </doc:example>
 	 */
-	.directive('navigation', ['$location', '$anchorScroll', function ($location, $anchorScroll) {
+	.directive('navigation', [function () {
 		return {
 			templateUrl: 'app/navigation/navigation.view.html',
 			restrict: 'E',
 			scope: {
 				navItems: '='
-			},
-			controller: function ($scope) {
-				$scope.goToHash = function (h) {
-					var hash = h.toLowerCase();
-					console.log(hash);
+			}
+		};
+	}])
+	.directive('scrollTo', ['$location', '$anchorScroll', function ($location, $anchorScroll) {
+		return {
+			restrict: 'A',
+			link: function (scope, elem, attrs) {
+				elem.on('click', function () {
+					var hash = attrs.scrollTo.toLowerCase();
 					$location.hash(hash);
 					$anchorScroll();
-				};
+				});
 			}
 		};
 	}]);

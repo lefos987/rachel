@@ -3,6 +3,7 @@
 @import "hero/hero";
 @import "info/info";
 @import "portfolio/portfolio";
+@import "footer/footer";
 
 html, body {
 	width: 100%;
@@ -14,17 +15,5 @@ html, body {
 	height: 100%;
 	@media #{$large-up} {
 		padding: 0 $gutter;
-	}
-}
-
-.footer {
-	background: white;
-	padding: 0 ($gutter * 2);
-	border-top: 5px solid $blue;
-
-	.footer-text, .sm-list  {
-		display: inline-block;
-		margin: 0;
-		padding: 6px;
 	}
 }
