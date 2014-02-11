@@ -10,7 +10,7 @@ angular.module('app/hero/hero.view.html', []).run(['$templateCache', function($t
 	'use strict';
 	$templateCache.put('app/hero/hero.view.html',
 		'<section class="hero">\n' +
-		'	<h4 class="hero-text">I design user experiences that promote your business</h4>\n' +
+		'	<h4 class="hero-text">I design user experiences that <span class="hero-text--dynamic">promote your business</span></h4>\n' +
 		'	<ul class="hero-controls inline-list">\n' +
 		'		<li class="hero-controls-item"><</li>\n' +
 		'		<li class="hero-controls-item">></li>\n' +
@@ -23,7 +23,7 @@ angular.module('app/info/info.view.html', []).run(['$templateCache', function($t
 	$templateCache.put('app/info/info.view.html',
 		'<div class="information row" ng-controller="InfoCtrl">\n' +
 		'	<div class="why-me large-7 columns">\n' +
-		'		<h4>Why me?</h4>\n' +
+		'		<h4 class="why-me-header">Why me?</h4>\n' +
 		'		<p>\n' +
 		'			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, pariatur, dolorum, iure blanditiis dolores laborum esse eum sit nesciunt beatae voluptas inventore laboriosam magni iste porro asperiores temporibus. Quae, unde!\n' +
 		'		</p>\n' +
@@ -32,7 +32,7 @@ angular.module('app/info/info.view.html', []).run(['$templateCache', function($t
 		'			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, veritatis, sapiente ipsum voluptatum velit nobis a corporis voluptatibus veniam facilis aliquid dicta qui quod dolorem est reiciendis explicabo. Recusandae, quis.\n' +
 		'		</p>\n' +
 		'		<div class="row">\n' +
-		'			<img class="large-4 columns" src="assets/img/rachel.png" alt="">\n' +
+		'			<img class="large-4 columns" src="assets/img/img_me.png" alt="">\n' +
 		'			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>\n' +
 		'		</div>\n' +
 		'	</div>\n' +
@@ -48,7 +48,7 @@ angular.module('app/info/info.view.html', []).run(['$templateCache', function($t
 angular.module('app/navigation/navigation.view.html', []).run(['$templateCache', function($templateCache) {
 	'use strict';
 	$templateCache.put('app/navigation/navigation.view.html',
-		'<ul class="tobar-nav large-6 columns inline-list">\n' +
+		'<ul class="topbar-nav inline-list right">\n' +
 		'	<li class="topbar-nav-item" ng-repeat="navItem in navItems">\n' +
 		'		<a href="{{navItem.url}}" ng-click="goToHash(navItem.name)">{{navItem.name}}</a>\n' +
 		'	</li>\n' +
@@ -83,7 +83,7 @@ angular.module('app/portfolio/concepts/concepts.view.html', []).run(['$templateC
 angular.module('app/portfolio/portfolio.view.html', []).run(['$templateCache', function($templateCache) {
 	'use strict';
 	$templateCache.put('app/portfolio/portfolio.view.html',
-		'<ul class="portfolio-list small-block-grid-3">\n' +
+		'<ul class="portfolio-list small-block-grid-1 medium-block-grid-2 large-block-grid-3">\n' +
 		'  <li class="portfolio-list-item" ng-repeat="menu in menus">\n' +
 		'  	<a class="portfolio-list-item-header" href="{{menu.url}}">\n' +
 		'  		{{menu.name}}\n' +

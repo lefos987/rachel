@@ -1,5 +1,9 @@
 .portfolio {
-	margin-top: 40px;
+	min-height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: $gutter ($gutter * 2);
+	background: white;
 	
 	.portfolio-list-item {
 		height: 250px;
@@ -12,10 +16,10 @@
 			color: black;
 			font-size: 18px;
 			padding: 10px 15px;
+			border-top: 5px solid white;
 
 			&:hover {
-				background: #EEE;
-				border-top: 5px solid black;
+				border-top: 5px solid $blue;
 			}
 		}
 	}

@@ -1,11 +1,28 @@
-@import "../variables";
-
-.topbar, .footer {
-	height: $topbarH;
-	padding: 0 $gridPadding;
+.header {
 	background: white;
+}
+.topbar {
+	padding: 0 ($gutter * 2);
+	background: $blue;
 
-	.topbar-nav-item {
+	@media #{$large-up} {
+		margin: 0 $gutter;
+	}
+	
+	.topbar-logo {
+		width: 64px;
+		margin-bottom: 6px;
+	}
+	.topbar-nav {
+		margin-bottom: 0;
+		padding: 10px;
+	}
+	.topbar-nav-item a{
 		margin-right: 50px;
+		color: white;
+		
+		&:hover {
+			color: $grey;
+		}
 	}
 }

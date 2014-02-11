@@ -11,24 +11,25 @@
 	</head>
 
 	<body>
-		
-		<header class="topbar row" ng-controller="NavigationCtrl">
-			<div class="tobar-logo large-6 columns">MyLogo</div>
-			<navigation nav-items="navigation"></navigation>
+		<header class="header" ng-controller="NavigationCtrl">
+			<div class="topbar">
+				<img class="topbar-logo" src="/assets/img/logo.png"></img>
+				<navigation nav-items="navigation"></navigation>	
+			</div>
 		</header>
 		<div class="main">
 			<hero></hero>	
 			<info></info>
 			<div id="portfolio" class="portfolio row" ng-view></div>
+			<footer class="footer">
+				<p class="footer-text">&copy; Redsi Ltd 2013. All rights reserved</p>
+				<ul class="sm-list inline-list right">
+					<li>Twitter</li>
+					<li>Facebook</li>
+					<li>LinkedIn</li>
+				</ul>
+			</footer>	
 		</div>
-		<footer class="footer row">
-			<div class="footer-text large-6 columns">My footer text</div>
-			<ul class="inline-list large-6 columns">
-				<li>Twitter</li>
-				<li>Facebook</li>
-				<li>LinkedIn</li>
-			</ul>
-		</footer>
 
 		<!-------------------------------- Scripts --------------------------------------------->
 

@@ -1,3 +1,4 @@
+@import "variables";
 @import "topbar/topbar";
 @import "hero/hero";
 @import "info/info";
@@ -5,8 +6,25 @@
 
 html, body {
 	width: 100%;
-	background: #DDD;
+	background: $grey;
+	font-family: Helvetica Neue;
 }
+
 .main {
-	margin: 0 $gridPadding;
+	height: 100%;
+	@media #{$large-up} {
+		padding: 0 $gutter;
+	}
+}
+
+.footer {
+	background: white;
+	padding: 0 ($gutter * 2);
+	border-top: 5px solid $blue;
+
+	.footer-text, .sm-list  {
+		display: inline-block;
+		margin: 0;
+		padding: 6px;
+	}
 }

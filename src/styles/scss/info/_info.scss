@@ -1,14 +1,23 @@
 .information {
-	background: #EEE;
-	padding: 5% 10%;
+	min-height: 100%;
+	width: 100%;
+	background: $lightGrey;
+	margin: 0;
+	padding: $gutter ($gutter * 2);
+	
+	.why-me {
+		.why-me-header {
+			color: $blue;
+		}
+	}
 
 	.skills {
 		padding: 20px;
 		background: white;
-		border-top: 5px solid black;
+		border-top: 5px solid $blue;
 
 		.skills-header {
-			font-weight: bold;
+			color: $blue;
 			margin-bottom: 40px;
 		}
 	}
