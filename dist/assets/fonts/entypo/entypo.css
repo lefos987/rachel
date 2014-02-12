@@ -31,3 +31,12 @@
 .down-chevron:before {
 	content: '\e764';
 }
+.information:before {
+	content: '\2139';
+}
+.portfolio:before {
+	content: '\e736';
+}
+.contact:before {
+	content: '\2709';
+}

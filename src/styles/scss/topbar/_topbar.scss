@@ -32,4 +32,26 @@
 			color: $grey;
 		}
 	}
+
+	.topbar-nav-item a {
+
+		&.information, &.portfolio, &.contact {
+			position: absolute;
+			font-size: 64px;
+			margin: 0;
+		}
+
+		&.information {
+			right: 130px;
+			top: -30px;
+		}
+		&.portfolio {
+			right: 70px;
+			top: -27px;
+		}
+		&.contact {
+			right: 10px;
+			top: -25px;
+		}
+	}
 }
