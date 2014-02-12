@@ -1,13 +1,12 @@
-<div class="portfolio-details small-12 medium-10 large-10columns">
-	<div class="client-details right">
-		<div class="row">
-			<h4 class="section-header client-details-header small-8 medium-10 columns">{{title}}</h4>
-			<a href="" class="small-1 columns end right" ng-class="{btnToggleUp: show, btnToggleDown: !show}" ng-click="toggle()"></a>	
+<div class="section row">
+	<div class="portfolio-details small-12 columns">
+		<div class="client-details right">
+			<h4 class="section-header client-details-header">{{title}}</h4>
+			<a href="" class="btn-toggle icn" ng-class="{'up-chevron': show, 'down-chevron': !show}" ng-click="toggle()"></a>	
+			<div class="client-details-text" ng-if="show">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, sunt, tempore, voluptate ad quasi molestias sint iure inventore nostrum minus repellendus temporibus nisi eius quia omnis labore voluptatibus harum vel.</p>
+			</div>	
 		</div>
-		
-		<div class="client-details-text" ng-if="show">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, sunt, tempore, voluptate ad quasi molestias sint iure inventore nostrum minus repellendus temporibus nisi eius quia omnis labore voluptatibus harum vel.</p>
-		</div>	
+		<div class="portfolio-details-hero"></div>
 	</div>
-	<div class="portfolio-details-hero"></div>
 </div>

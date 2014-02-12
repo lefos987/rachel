@@ -21,6 +21,7 @@ angular.module('portfolio', ['concepts', 'concept-details'])
 	 *
 	 */
 	.controller('PortfolioCtrl', ['$scope', function ($scope) {
+		$scope.showControls = false;
 		$scope.menus = [
 				{name: 'Wireframes', url: '/wireframes'},
 				{name: 'User Journeys', url: '/user-journeys'},
@@ -51,7 +52,8 @@ angular.module('portfolio', ['concepts', 'concept-details'])
 			templateUrl: 'app/portfolio/grid.view.html',
 			restrict: 'E',
 			scope: {
-				items: '='
+				items: '=',
+				showControls: '='
 			}
 		};
 	}])//mk:module

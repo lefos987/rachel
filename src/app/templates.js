@@ -81,31 +81,31 @@ angular.module('app/navigation/navigation.view.html', []).run(['$templateCache',
 angular.module('app/portfolio/concepts/concept-details.view.html', []).run(['$templateCache', function($templateCache) {
 	'use strict';
 	$templateCache.put('app/portfolio/concepts/concept-details.view.html',
-		'<div class="portfolio-details small-12 medium-10 large-10columns">\n' +
-		'	<div class="client-details right">\n' +
-		'		<div class="row">\n' +
-		'			<h4 class="section-header client-details-header small-8 medium-10 columns">{{title}}</h4>\n' +
-		'			<a href="" class="small-1 columns end right" ng-class="{btnToggleUp: show, btnToggleDown: !show}" ng-click="toggle()"></a>	\n' +
+		'<div class="section row">\n' +
+		'	<div class="portfolio-details small-12 columns">\n' +
+		'		<div class="client-details right">\n' +
+		'			<h4 class="section-header client-details-header">{{title}}</h4>\n' +
+		'			<a href="" class="btn-toggle icn" ng-class="{\'up-chevron\': show, \'down-chevron\': !show}" ng-click="toggle()"></a>	\n' +
+		'			<div class="client-details-text" ng-if="show">\n' +
+		'				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, sunt, tempore, voluptate ad quasi molestias sint iure inventore nostrum minus repellendus temporibus nisi eius quia omnis labore voluptatibus harum vel.</p>\n' +
+		'			</div>	\n' +
 		'		</div>\n' +
-		'		\n' +
-		'		<div class="client-details-text" ng-if="show">\n' +
-		'			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, sunt, tempore, voluptate ad quasi molestias sint iure inventore nostrum minus repellendus temporibus nisi eius quia omnis labore voluptatibus harum vel.</p>\n' +
-		'		</div>	\n' +
+		'		<div class="portfolio-details-hero"></div>\n' +
 		'	</div>\n' +
-		'	<div class="portfolio-details-hero"></div>\n' +
 		'</div>');
 }]);
 
 angular.module('app/portfolio/concepts/concepts.view.html', []).run(['$templateCache', function($templateCache) {
 	'use strict';
 	$templateCache.put('app/portfolio/concepts/concepts.view.html',
-		'<grid items="concepts"></grid>');
+		'<grid items="concepts" show-controls="showControls"></grid>');
 }]);
 
 angular.module('app/portfolio/grid.view.html', []).run(['$templateCache', function($templateCache) {
 	'use strict';
 	$templateCache.put('app/portfolio/grid.view.html',
 		'<div class="section row">\n' +
+		'	<a href="/" class="icn left-chevron controls prev hide-for-small-only" ng-if="showControls"></a>\n' +
 		'	<ul class="portfolio-grid small-12 small-block-grid-1 medium-block-grid-2 large-block-grid-3">\n' +
 		'		<li class="portfolio-grid-item" ng-repeat="item in items">\n' +
 		'			<a class="portfolio-grid-item-header" href="{{item.url}}">\n' +
@@ -113,11 +113,12 @@ angular.module('app/portfolio/grid.view.html', []).run(['$templateCache', functi
 		'			</a>\n' +
 		'		</li>\n' +
 		'	</ul>\n' +
+		'	<a href="/" class="icn right-chevron controls next hide-for-small-only" ng-if="showControls"></a>\n' +
 		'</div>');
 }]);
 
 angular.module('app/portfolio/portfolio.view.html', []).run(['$templateCache', function($templateCache) {
 	'use strict';
 	$templateCache.put('app/portfolio/portfolio.view.html',
-		'<grid items="menus"></grid>');
+		'<grid items="menus" show-controls="showControls"></grid>');
 }]);

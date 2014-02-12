@@ -8,3 +8,26 @@
 	font-weight: normal;
 	font-style: normal;
 }
+
+.icn:before {
+	font-family: 'entypo';
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.left-chevron:before {
+	content: '\e765';
+}
+.right-chevron:before {
+	content: '\e766';
+}
+.up-chevron:before {
+	content: '\e767';
+}
+.down-chevron:before {
+	content: '\e764';
+}

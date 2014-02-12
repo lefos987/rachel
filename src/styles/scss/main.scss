@@ -6,11 +6,6 @@
 @import "contact/contact";
 @import "footer/footer";
 
-.lefteris {
-	font-family: "entypo";
-	font-size: 32px;
-}
-
 html, body {
 	width: 100%;
 	background: $grey;
@@ -31,6 +26,7 @@ html, body {
 		min-height: 100%;
 		margin: 0;
 		padding: $gutter ($gutter * 2);
+		position: relative;
 	}
 	.section-header {
 		color: $blue;

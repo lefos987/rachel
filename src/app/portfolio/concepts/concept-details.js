@@ -23,12 +23,12 @@ angular.module('concept-details', ['ngRoute'])
 	.controller('ConceptDetailsCtrl', ['$scope', '$routeParams',
 		function ($scope, $routeParams) {
 
-		var titleArr = $routeParams.conceptId.split('-');
-		var title = '';
+		var titleArr = $routeParams.conceptId.split('-'),
+				title = '';
+				
 		for (var i in titleArr) {
 			title += titleArr[i] + ' ';
 		}
-		console.log('title: ', title);
 		$scope.title = title;
 		$scope.show = true;
 		$scope.toggle = function () {

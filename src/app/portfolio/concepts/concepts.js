@@ -21,6 +21,7 @@ angular.module('concepts', [])
 	 *
 	 */
 	.controller('ConceptsCtrl', ['$scope', function ($scope) {
+		$scope.showControls = true;
 		$scope.concepts = [
 			{name: 'Thompson Reuters', url: '/concepts/thompson-reuters'},
 			{name: 'Burberry', url: '/concepts/burberry'},
