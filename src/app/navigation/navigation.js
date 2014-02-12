@@ -70,14 +70,32 @@ angular.module('navigation', [])
 			}
 		};
 	}])
+
+	/**
+	 * @ngdoc function
+	 * @name ng.directive:scrollTo
+	 * @function
+	 *
+	 * @description
+	 * [add a description]
+	 *
+	 * @example
+	   <doc:example>
+	     <doc:source>
+	       <navigation></navigation>
+	     </doc:source>
+	   </doc:example>
+	 */
 	.directive('scrollTo', ['$location', '$anchorScroll', function ($location, $anchorScroll) {
 		return {
 			restrict: 'A',
 			link: function (scope, elem, attrs) {
 				elem.on('click', function () {
+					var oldHash = $location.hash();
 					var hash = attrs.scrollTo.toLowerCase();
 					$location.hash(hash);
 					$anchorScroll();
+					$location.hash(oldHash);
 				});
 			}
 		};
