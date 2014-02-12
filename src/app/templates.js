@@ -49,11 +49,15 @@ angular.module('app/info/info.view.html', []).run(['$templateCache', function($t
 		'		<h5>Let me help</h5>\n' +
 		'		<p>\n' +
 		'			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, veritatis, sapiente ipsum voluptatum velit nobis a corporis voluptatibus veniam facilis aliquid dicta qui quod dolorem est reiciendis explicabo. Recusandae, quis.\n' +
+		'			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum inventore velit beatae quas tempora explicabo praesentium? Vel, doloremque aspernatur hic ut inventore eligendi! Eaque, voluptates itaque ipsa amet ipsum doloribus.\n' +
+		'			elit.\n' +
 		'		</p>\n' +
-		'		<div class="row">\n' +
-		'			<img class="large-4 columns" src="assets/img/img_me.png" alt="">\n' +
-		'			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>\n' +
-		'		</div>\n' +
+		'		<img class="rachel" src="/assets/img/img_me.png" alt="">\n' +
+		'		<p>\n' +
+		'			Voluptatum inventore velit beatae quas tempora explicabo praesentium? Vel, doloremque aspernatur hic ut inventore eligendi! Eaque, voluptates itaque ipsa amet ipsum doloribus.\n' +
+		'			elit. Voluptatum inventore velit beatae quas tempora explicabo praesentium? Vel, doloremque aspernatur hic ut inventore eligendi! Eaque, voluptates itaque ipsa amet ipsum doloribus.\n' +
+		'			elit. Voluptatum inventore velit beatae quas tempora explicabo praesentium? Vel, doloremque aspernatur hic ut inventore eligendi! Eaque, voluptates itaque ipsa amet ipsum doloribus.\n' +
+		'		</p>\n' +
 		'	</div>\n' +
 		'	<div class="skills large-offset-1 large-4 columns">\n' +
 		'		<h4 class="section-header">Skills and Services</h4>\n' +
@@ -101,20 +105,18 @@ angular.module('app/portfolio/concepts/concept-details.view.html', []).run(['$te
 angular.module('app/portfolio/concepts/concepts.view.html', []).run(['$templateCache', function($templateCache) {
 	'use strict';
 	$templateCache.put('app/portfolio/concepts/concepts.view.html',
-		'<div class="concepts row">\n' +
-		'	<div class="small-1 columns">\n' +
-		'		<a href="/" class="controls prev"></a>\n' +
-		'	</div>\n' +
-		'	<ul class="portfolio-list small-10 columns small-block-grid-1 medium-block-grid-2 large-block-grid-3">\n' +
-		'	  <li class="portfolio-list-item" ng-repeat="concept in concepts">\n' +
-		'	  	<a class="portfolio-list-item-header" href="{{concept.url}}">\n' +
-		'	  		{{concept.name}}\n' +
-		'	  	</a>\n' +
-		'	  </li>\n' +
-		'	</ul>\n' +
-		'	<div class="small-1 columns">\n' +
-		'		<a href="" class="controls next"></a>	\n' +
-		'	</div>\n' +
+		'<div class="hide-for-small-only medium-1 large-1 columns">\n' +
+		'	<a href="/" class="controls prev hide-for-small-only"></a>\n' +
+		'</div>\n' +
+		'<ul class="portfolio-list small-10 columns small-block-grid-1 medium-block-grid-2 large-block-grid-3">\n' +
+		'  <li class="portfolio-list-item" ng-repeat="concept in concepts">\n' +
+		'  	<a class="portfolio-list-item-header" href="{{concept.url}}">\n' +
+		'  		{{concept.name}}\n' +
+		'  	</a>\n' +
+		'  </li>\n' +
+		'</ul>\n' +
+		'<div class="hide-for-small-only medium-1 large-1 columns">\n' +
+		'	<a href="/" class="controls next hide-for-small-only"></a>\n' +
 		'</div>');
 }]);
 

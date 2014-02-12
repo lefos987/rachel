@@ -1,0 +1,18 @@
+.client-details-text.ng-enter, .client-details-text.ng-leave {
+	-webkit-transition:all linear 0.25s;
+  transition:all linear 0.25s;
+ 	opacity: 1;
+}
+ 
+.client-details-text.ng-enter {
+  opacity: 0;
+}
+.client-details-text.ng-leave {
+	opacity: 1;
+}
+.client-details-text.ng-enter.ng-enter-active {
+  opacity: 1
+}
+.client-details-text.ng-leave.ng-leave-active {
+  opacity: 0;
+}

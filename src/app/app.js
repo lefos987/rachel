@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('app', ['templates', 'common', 'ngRoute', 'navigation', 'hero', 'info', 'portfolio',
-	'contact'])
+angular.module('app', ['templates', 'common', 'ngRoute', 'ngAnimate',
+	'navigation', 'hero', 'info', 'portfolio', 'contact'])
 	.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
 		$routeProvider
 			.when('/', {
