@@ -2,19 +2,13 @@
 	background: white;
 }
 .topbar {
-	padding: 0 ($gutter * 2);
+	padding: 0 ($gutter * 3);
 	background: $blue;
 		
 	@media #{$small-only} {
 		padding: 10px;
 	}
 
-	@media #{$large-up} {
-		margin: 0 $gutter;
-	}
-	@media #{$xxlarge-up} {
-		margin: 0 ($gutter * 2);
-	}
 	.topbar-logo {
 		width: 64px;
 		margin-bottom: 6px;
@@ -42,15 +36,15 @@
 		}
 
 		&.information {
-			right: 130px;
+			right: 135px;
 			top: -30px;
 		}
 		&.portfolio {
-			right: 70px;
+			right: 75px;
 			top: -27px;
 		}
 		&.contact {
-			right: 10px;
+			right: 15px;
 			top: -25px;
 		}
 	}
