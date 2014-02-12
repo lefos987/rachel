@@ -4,7 +4,7 @@
 .topbar {
 	padding: 0 ($gutter * 2);
 	background: $blue;
-	
+		
 	@media #{$small-only} {
 		padding: 10px;
 	}

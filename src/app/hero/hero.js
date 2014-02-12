@@ -20,8 +20,41 @@ angular.module('hero', [])
 	 * [add a description]
 	 *
 	 */
-	.controller('HeroCtrl', ['$scope', function ($scope) {
-		$scope.msg = 'This is the HeroCtrl controller';
+	.controller('HeroCtrl', ['$scope', 'heroFactory', function ($scope, heroFactory) {
+		$scope.messages = ['promote your business', 'are value for money'];
+	}])
+
+	/**
+	 * @ngdoc function
+	 * @name ng.factory:heroFactory
+	 * @function
+	 *
+	 * @description
+	 * [add a description]
+	 *
+	 * @returns {string} A new instance of this factory.
+	 *
+	 */
+	.factory('heroFactory', ['$timeout', function ($timeout) {
+
+		return function (arr, interval) {
+			var next,
+
+			rotator = {
+				index: 0,
+				currentMsg: null,
+				items: arr
+			};
+
+			var updateMsg = function () {
+				rotator.index = (rotator.index === rotator.items.length) ? 0 : rotator.index;
+				rotator.currentMsg = rotator.items[rotator.index++];
+				next = $timeout(updateMsg, interval);
+			};
+			updateMsg();
+
+			return rotator;
+		};
 	}])
 
 	/**
@@ -39,9 +72,21 @@ angular.module('hero', [])
 	     </doc:source>
 	   </doc:example>
 	 */
-	.directive('hero', function () {
+	.directive('hero', ['heroFactory', function (heroFactory) {
 		return {
 			templateUrl: 'app/hero/hero.view.html',
-			restrict: 'E'
+			restrict: 'E',
+			controller: 'HeroCtrl',
+			scope: {
+				messages: '='
+			},
+			link: function (scope) {
+				var rotator = heroFactory(scope.messages, 10000);
+				scope.$watch(function () { return rotator.currentMsg; }, function (msg) {
+					scope.message = msg;
+				});
+			}
 		};
-	});
+	}]);
+
+	

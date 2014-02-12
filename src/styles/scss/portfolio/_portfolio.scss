@@ -23,6 +23,7 @@
 .controls {
 	display: block;
 	background-image: url('/assets/img/IconsArrows.png');
+	width: 100%;
 	height: 64px;
 	padding: 0;
 
@@ -30,16 +31,21 @@
 		background-position: -225px 10px;
 	}
 	&.next {
-		background-position: -375px 10px;
+		background-position: -400px 10px;
+
+		@media #{$medium-up} {
+			background-position: -380px 10px;
+		}
 	}
 }
 
 .portfolio-details {
 	position: relative;
 	padding: 0;
+	margin: 0 10px;
 
 	.client-details {
-		width: 33%;
+		width: 45%;
 		position: absolute;
 		right: 0;
 		top: -60px;
@@ -48,31 +54,37 @@
 	
 	.client-details-header {
 		padding: 10px 0 10px 10px;
+		margin: 0;
+
+		@media #{$small-only} {
+			padding: 2px 0 2px 2px;			
+		}
 		display: inline-block;
 	}
 	
 	.client-details-text {
 		background-color:rgba(255, 255, 255, 0.6);
 		padding: 20px 0 20px 10px;
-	
-		p {
-			z-index: 10;
-		}
+		max-height: 300px;
+		overflow: auto;
+	}
+
+	.portfolio-details-hero {
+		background: pink;
+		height: 400px;
 	}
 
 	.btnToggleUp, .btnToggleDown {
-		display: inline-block;
 		height: 24px;
-		width: 40px;
-		margin: 15px 5px 0 0;
-		float: right;
+		margin-top: 15px;
+		margin-right: 5px;
 		background-image: url('/assets/img/IconsArrows.png');
 	}
 	.btnToggleUp {
-		background-position: -130px 0px;
+		background-position: -135px 0px;
 	}
 	.btnToggleDown {
-		background-position: -175px 0px;
+		background-position: -185px 0px;
 	}
 
 }

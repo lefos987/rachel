@@ -11,14 +11,14 @@
 	</head>
 
 	<body>
-		<header class="header" ng-controller="NavigationCtrl">
+		<header class="header fixed" ng-controller="NavigationCtrl">
 			<div class="topbar">
 				<img class="topbar-logo" src="/assets/img/logo.png"></img>
 				<navigation nav-items="navigation"></navigation>	
 			</div>
 		</header>
 		<div class="main">
-			<hero></hero>	
+			<hero messages="messages"></hero>	
 			<info id="information"></info>
 			<div id="portfolio" ng-view></div>
 			<contact id="contact"></contact>

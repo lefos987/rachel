@@ -29,7 +29,7 @@ angular.module('app/hero/hero.view.html', []).run(['$templateCache', function($t
 	'use strict';
 	$templateCache.put('app/hero/hero.view.html',
 		'<section id="home" class="hero">\n' +
-		'	<h4 class="hero-text">I design user experiences that <span class="hero-text--dynamic">promote your business</span></h4>\n' +
+		'	<h4 class="hero-text">I design user experiences that <span class="hero-text--dynamic">{{message}}</span></h4>\n' +
 		'	<ul class="hero-controls inline-list">\n' +
 		'		<li class="hero-controls-item"><</li>\n' +
 		'		<li class="hero-controls-item">></li>\n' +
@@ -67,7 +67,7 @@ angular.module('app/info/info.view.html', []).run(['$templateCache', function($t
 angular.module('app/navigation/navigation.view.html', []).run(['$templateCache', function($templateCache) {
 	'use strict';
 	$templateCache.put('app/navigation/navigation.view.html',
-		'<ul class="topbar-nav inline-list right">\n' +
+		'<ul class="topbar-nav inline-list right hide-for-small-only">\n' +
 		'	<li class="topbar-nav-item" ng-repeat="navItem in navItems">\n' +
 		'		<a href="{{navItem.url}}" scroll-to="{{navItem.name}}">{{navItem.name}}</a>\n' +
 		'	</li>\n' +
@@ -77,21 +77,24 @@ angular.module('app/navigation/navigation.view.html', []).run(['$templateCache',
 angular.module('app/portfolio/concepts/concept-details.view.html', []).run(['$templateCache', function($templateCache) {
 	'use strict';
 	$templateCache.put('app/portfolio/concepts/concept-details.view.html',
-		'<div class="large-1 columns">\n' +
-		'	<a href="/" class="controls prev"></a>\n' +
+		'<div class="hide-for-small-only medium-1 large-1 columns">\n' +
+		'	<a href="/" class="controls prev hide-for-small-only"></a>\n' +
 		'</div>\n' +
-		'<div class="portfolio-details large-10 columns">\n' +
+		'<div class="portfolio-details small-12 medium-10 large-10columns">\n' +
 		'	<div class="client-details right">\n' +
-		'		<h4 class="section-header client-details-header">{{title}}</h4>\n' +
-		'		<a href="" ng-class="{btnToggleUp: show, btnToggleDown: !show}" ng-click="toggle()"></a>\n' +
+		'		<div class="row">\n' +
+		'			<h4 class="section-header client-details-header small-8 medium-10 columns">{{title}}</h4>\n' +
+		'			<a href="" class="small-1 columns end right" ng-class="{btnToggleUp: show, btnToggleDown: !show}" ng-click="toggle()"></a>	\n' +
+		'		</div>\n' +
+		'		\n' +
 		'		<div class="client-details-text" ng-if="show">\n' +
 		'			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, sunt, tempore, voluptate ad quasi molestias sint iure inventore nostrum minus repellendus temporibus nisi eius quia omnis labore voluptatibus harum vel.</p>\n' +
 		'		</div>	\n' +
 		'	</div>\n' +
-		'	<div style="height: 400px; width: 100%; background: pink; overflow: hidden;" >a</div>\n' +
+		'	<div class="portfolio-details-hero"></div>\n' +
 		'</div>\n' +
-		'<div class="large-1 columns">\n' +
-		'	<a href="/" class="controls next"></a>\n' +
+		'<div class="hide-for-small-only medium-1 large-1 columns">\n' +
+		'	<a href="/" class="controls next hide-for-small-only"></a>\n' +
 		'</div>');
 }]);
 

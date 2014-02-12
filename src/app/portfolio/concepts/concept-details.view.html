@@ -1,16 +1,19 @@
-<div class="large-1 columns">
-	<a href="/" class="controls prev"></a>
+<div class="hide-for-small-only medium-1 large-1 columns">
+	<a href="/" class="controls prev hide-for-small-only"></a>
 </div>
-<div class="portfolio-details large-10 columns">
+<div class="portfolio-details small-12 medium-10 large-10columns">
 	<div class="client-details right">
-		<h4 class="section-header client-details-header">{{title}}</h4>
-		<a href="" ng-class="{btnToggleUp: show, btnToggleDown: !show}" ng-click="toggle()"></a>
+		<div class="row">
+			<h4 class="section-header client-details-header small-8 medium-10 columns">{{title}}</h4>
+			<a href="" class="small-1 columns end right" ng-class="{btnToggleUp: show, btnToggleDown: !show}" ng-click="toggle()"></a>	
+		</div>
+		
 		<div class="client-details-text" ng-if="show">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, sunt, tempore, voluptate ad quasi molestias sint iure inventore nostrum minus repellendus temporibus nisi eius quia omnis labore voluptatibus harum vel.</p>
 		</div>	
 	</div>
-	<div style="height: 400px; width: 100%; background: pink; overflow: hidden;" >a</div>
+	<div class="portfolio-details-hero"></div>
 </div>
-<div class="large-1 columns">
-	<a href="/" class="controls next"></a>
+<div class="hide-for-small-only medium-1 large-1 columns">
+	<a href="/" class="controls next hide-for-small-only"></a>
 </div>
