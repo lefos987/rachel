@@ -1,27 +1,7 @@
+@import "grid";
 @import "portfolioAnimation";
 
-.portfolio-list {
-	
-	.portfolio-list-item {
-		height: 250px;
 
-		.portfolio-list-item-header {
-			background: $grey;
-			display: block;
-			height: 100%;
-			width: 100%;
-			color: black;
-			font-size: 18px;
-			padding: 10px 15px;
-			border-top: 5px solid white;
-
-			&:hover {
-				border-top: 5px solid $blue;
-				background-color: rgba(255, 255, 255, 0.7);
-			}
-		}
-	}
-}
 
 .controls {
 	display: block;

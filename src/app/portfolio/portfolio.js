@@ -29,4 +29,30 @@ angular.module('portfolio', ['concepts', 'concept-details'])
 				{name: 'Client Side', url: '/client-side'},
 				{name: 'Agency', url: '/agency'}
 			];
-	}]);
+	}])
+
+	/**
+	 * @ngdoc function
+	 * @name ng.directive:grid
+	 * @function
+	 *
+	 * @description
+	 * [add a description]
+	 *
+	 * @example
+	   <doc:example>
+	     <doc:source>
+	       <grid></grid>
+	     </doc:source>
+	   </doc:example>
+	 */
+	.directive('grid', [function () {
+		return {
+			templateUrl: 'app/portfolio/grid.view.html',
+			restrict: 'E',
+			scope: {
+				items: '='
+			}
+		};
+	}])//mk:module
+;

@@ -1,4 +1,4 @@
-angular.module('templates', ['app/app.view.html', 'app/contact/contact.view.html', 'app/hero/hero.view.html', 'app/info/info.view.html', 'app/navigation/navigation.view.html', 'app/portfolio/concepts/concept-details.view.html', 'app/portfolio/concepts/concepts.view.html', 'app/portfolio/portfolio.view.html']);
+angular.module('templates', ['app/app.view.html', 'app/contact/contact.view.html', 'app/hero/hero.view.html', 'app/info/info.view.html', 'app/navigation/navigation.view.html', 'app/portfolio/concepts/concept-details.view.html', 'app/portfolio/concepts/concepts.view.html', 'app/portfolio/grid.view.html', 'app/portfolio/portfolio.view.html']);
 
 angular.module('app/app.view.html', []).run(['$templateCache', function($templateCache) {
 	'use strict';
@@ -81,9 +81,6 @@ angular.module('app/navigation/navigation.view.html', []).run(['$templateCache',
 angular.module('app/portfolio/concepts/concept-details.view.html', []).run(['$templateCache', function($templateCache) {
 	'use strict';
 	$templateCache.put('app/portfolio/concepts/concept-details.view.html',
-		'<div class="hide-for-small-only medium-1 large-1 columns">\n' +
-		'	<a href="/" class="controls prev hide-for-small-only"></a>\n' +
-		'</div>\n' +
 		'<div class="portfolio-details small-12 medium-10 large-10columns">\n' +
 		'	<div class="client-details right">\n' +
 		'		<div class="row">\n' +
@@ -96,40 +93,31 @@ angular.module('app/portfolio/concepts/concept-details.view.html', []).run(['$te
 		'		</div>	\n' +
 		'	</div>\n' +
 		'	<div class="portfolio-details-hero"></div>\n' +
-		'</div>\n' +
-		'<div class="hide-for-small-only medium-1 large-1 columns">\n' +
-		'	<a href="/" class="controls next hide-for-small-only"></a>\n' +
 		'</div>');
 }]);
 
 angular.module('app/portfolio/concepts/concepts.view.html', []).run(['$templateCache', function($templateCache) {
 	'use strict';
 	$templateCache.put('app/portfolio/concepts/concepts.view.html',
-		'<div class="hide-for-small-only medium-1 large-1 columns">\n' +
-		'	<a href="/" class="controls prev hide-for-small-only"></a>\n' +
-		'</div>\n' +
-		'<ul class="portfolio-list small-10 columns small-block-grid-1 medium-block-grid-2 large-block-grid-3">\n' +
-		'  <li class="portfolio-list-item" ng-repeat="concept in concepts">\n' +
-		'  	<a class="portfolio-list-item-header" href="{{concept.url}}">\n' +
-		'  		{{concept.name}}\n' +
-		'  	</a>\n' +
-		'  </li>\n' +
-		'</ul>\n' +
-		'<div class="hide-for-small-only medium-1 large-1 columns">\n' +
-		'	<a href="/" class="controls next hide-for-small-only"></a>\n' +
+		'<grid items="concepts"></grid>');
+}]);
+
+angular.module('app/portfolio/grid.view.html', []).run(['$templateCache', function($templateCache) {
+	'use strict';
+	$templateCache.put('app/portfolio/grid.view.html',
+		'<div class="section row">\n' +
+		'	<ul class="portfolio-grid small-12 small-block-grid-1 medium-block-grid-2 large-block-grid-3">\n' +
+		'		<li class="portfolio-grid-item" ng-repeat="item in items">\n' +
+		'			<a class="portfolio-grid-item-header" href="{{item.url}}">\n' +
+		'				{{item.name}}\n' +
+		'			</a>\n' +
+		'		</li>\n' +
+		'	</ul>\n' +
 		'</div>');
 }]);
 
 angular.module('app/portfolio/portfolio.view.html', []).run(['$templateCache', function($templateCache) {
 	'use strict';
 	$templateCache.put('app/portfolio/portfolio.view.html',
-		'<div class="portfolio section row">\n' +
-		'	<ul class="portfolio-list small-block-grid-1 medium-block-grid-2 large-block-grid-3">\n' +
-		'	  <li class="portfolio-list-item" ng-repeat="menu in menus">\n' +
-		'	  	<a class="portfolio-list-item-header" href="{{menu.url}}">\n' +
-		'	  		{{menu.name}}\n' +
-		'	  	</a>\n' +
-		'	  </li>\n' +
-		'	</ul>\n' +
-		'</div>');
+		'<grid items="menus"></grid>');
 }]);
