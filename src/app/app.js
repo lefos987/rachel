@@ -16,6 +16,26 @@ angular.module('app', ['templates', 'common', 'ngRoute', 'ngAnimate',
 				templateUrl: 'app/portfolio/concepts/concept-details.view.html',
 				controller: 'ConceptDetailsCtrl'
 			})
+			.when('/wireframes', {
+				templateUrl: 'app/portfolio/wireframes/wireframes.view.html',
+				controller: 'WireframesCtrl'
+			})
+			.when('/user-journeys', {
+				templateUrl: 'app/portfolio/user-journeys/user-journeys.view.html',
+				controller: 'UserJourneysCtrl'
+			})
+			.when('/design', {
+				templateUrl: 'app/portfolio/design/design.view.html',
+				controller: 'DesignCtrl'
+			})
+			.when('/clients', {
+				templateUrl: 'app/portfolio/clients/clients.view.html',
+				controller: 'ClientsCtrl'
+			})
+			.when('/agency', {
+				templateUrl: 'app/portfolio/agency/agency.view.html',
+				controller: 'AgencyCtrl'
+			})
 			.otherwise({
 				redirectTo: '/'
 			});

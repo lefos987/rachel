@@ -14,13 +14,6 @@ html, body {
 
 .main {
 	height: 100%;
-
-	@media #{$large-up} {
-		padding: 0 $gutter;
-	}
-	@media #{$xxlarge-up} {
-		padding: 0 ($gutter * 2);
-	}
 	
 	.section {
 		min-height: 100%;

@@ -8,21 +8,32 @@ grid {
 	position: relative;
 	
 	.portfolio-grid-item {
-		height: 250px;
 
-		.portfolio-grid-item-header {
-			background: $grey;
+		.portfolio-grid-item-link {
 			display: block;
 			height: 100%;
 			width: 100%;
 			color: black;
 			font-size: 18px;
-			padding: 10px 15px;
+			position: relative;
 			border-top: 5px solid white;
-
 			&:hover {
 				border-top: 5px solid $blue;
-				background-color: rgba(255, 255, 255, 0.7);
+			}
+		}
+
+		.portfolio-grid-item-header {
+			position: absolute;
+			padding: 15px 25px;
+			background: $blue;
+			color: white;
+			left: 0;
+			right: 0;
+			z-index: 10;
+		}
+		.portfolio-grid-item-img {
+			&:hover {
+				opacity: 0.3;
 			}
 		}
 	}

@@ -9,7 +9,8 @@
  * [add a description]
  *
  */
-angular.module('portfolio', ['concepts', 'concept-details'])
+angular.module('portfolio', ['concepts', 'concept-details', 'wireframes', 'user-journeys', 'design',
+	'clients', 'agency'])
 
 	/**
 	 * @ngdoc function
@@ -23,12 +24,12 @@ angular.module('portfolio', ['concepts', 'concept-details'])
 	.controller('PortfolioCtrl', ['$scope', function ($scope) {
 		$scope.showControls = false;
 		$scope.menus = [
-				{name: 'Wireframes', url: '/wireframes'},
-				{name: 'User Journeys', url: '/user-journeys'},
-				{name: 'Concepts', url: '/concepts'},
-				{name: 'Design', url: '/design'},
-				{name: 'Client Side', url: '/client-side'},
-				{name: 'Agency', url: '/agency'}
+				{name: 'Wireframes', url: '/wireframes', img: '/assets/img/type/pf_img_square_wireframe_1.jpg'},
+				{name: 'User Journeys', url: '/user-journeys', img: '/assets/img/type/pf_img_square_userjourney_1.jpg'},
+				{name: 'Concepts', url: '/concepts', img: '/assets/img/type/pf_img_square_concept_1.jpg'},
+				{name: 'Design', url: '/design', img: '/assets/img/type/pf_img_square_design_1.jpg'},
+				{name: 'Client Side', url: '/clients', img: '/assets/img/type/pf_img_square_client_1.jpg'},
+				{name: 'Agency', url: '/agency', img: '/assets/img/type/pf_img_square_agency_1.jpg'}
 			];
 	}])
 

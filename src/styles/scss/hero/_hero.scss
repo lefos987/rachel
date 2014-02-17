@@ -2,7 +2,7 @@
 	width: 100%;
 	min-height: 100%;
 	position: relative;
-	background: purple;
+	background: url('assets/img/pf_img_intro_concept_1.jpg');
 
 	.hero-text {
 		position: absolute;
@@ -25,6 +25,7 @@
 	}
 
 	.hero-controls {
+		display: none;
 		position: absolute;
 		bottom: 15%;
 		right: 10%;
