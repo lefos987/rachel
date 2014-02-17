@@ -1,0 +1,14 @@
+<div class="section row">
+	<a href="/" class="icn left-chevron controls prev hide-for-small-only" ng-if="showControls"></a>
+	<div class="portfolio-details small-12 columns">
+		<div class="client-details right">
+			<h4 class="section-header client-details-header">{{item.title}}</h4>
+			<a href="" class="btn-toggle icn" ng-class="{'up-chevron': show, 'down-chevron': !show}" ng-click="toggle()"></a>	
+			<div class="client-details-text" ng-if="show">
+				<p>{{item.text}}</p>
+			</div>	
+		</div>
+		<div class="portfolio-details-hero"></div>
+	</div>
+	<a href="/" class="icn right-chevron controls next hide-for-small-only" ng-if="showControls"></a>
+</div>

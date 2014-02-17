@@ -1,4 +1,4 @@
-angular.module('templates', ['app/app.view.html', 'app/contact/contact.view.html', 'app/hero/hero.view.html', 'app/info/info.view.html', 'app/navigation/navigation.view.html', 'app/portfolio/agency/agency.view.html', 'app/portfolio/clients/clients.view.html', 'app/portfolio/concepts/concept-details.view.html', 'app/portfolio/concepts/concepts.view.html', 'app/portfolio/design/design.view.html', 'app/portfolio/grid.view.html', 'app/portfolio/portfolio.view.html', 'app/portfolio/user-journeys/user-journeys.view.html', 'app/portfolio/wireframes/wireframes.view.html']);
+angular.module('templates', ['app/app.view.html', 'app/contact/contact.view.html', 'app/hero/hero.view.html', 'app/info/info.view.html', 'app/navigation/navigation.view.html', 'app/portfolio/agency/agency-details.view.html', 'app/portfolio/agency/agency.view.html', 'app/portfolio/clients/clients-details.view.html', 'app/portfolio/clients/clients.view.html', 'app/portfolio/concepts/concept-details.view.html', 'app/portfolio/concepts/concepts.view.html', 'app/portfolio/design/design.view.html', 'app/portfolio/grid.view.html', 'app/portfolio/portfolio-details.view.html', 'app/portfolio/portfolio.view.html', 'app/portfolio/user-journeys/user-journeys.view.html', 'app/portfolio/wireframes/wireframes.view.html']);
 
 angular.module('app/app.view.html', []).run(['$templateCache', function($templateCache) {
 	'use strict';
@@ -79,10 +79,22 @@ angular.module('app/navigation/navigation.view.html', []).run(['$templateCache',
 		'</ul>');
 }]);
 
+angular.module('app/portfolio/agency/agency-details.view.html', []).run(['$templateCache', function($templateCache) {
+	'use strict';
+	$templateCache.put('app/portfolio/agency/agency-details.view.html',
+		'<portfolio-details item="item" show-controls="showControls"></portfolio-details>');
+}]);
+
 angular.module('app/portfolio/agency/agency.view.html', []).run(['$templateCache', function($templateCache) {
 	'use strict';
 	$templateCache.put('app/portfolio/agency/agency.view.html',
 		'<grid items="agency" show-controls="showControls"></grid>');
+}]);
+
+angular.module('app/portfolio/clients/clients-details.view.html', []).run(['$templateCache', function($templateCache) {
+	'use strict';
+	$templateCache.put('app/portfolio/clients/clients-details.view.html',
+		'<portfolio-details item="item" show-controls="showControls"></portfolio-details>');
 }]);
 
 angular.module('app/portfolio/clients/clients.view.html', []).run(['$templateCache', function($templateCache) {
@@ -94,18 +106,7 @@ angular.module('app/portfolio/clients/clients.view.html', []).run(['$templateCac
 angular.module('app/portfolio/concepts/concept-details.view.html', []).run(['$templateCache', function($templateCache) {
 	'use strict';
 	$templateCache.put('app/portfolio/concepts/concept-details.view.html',
-		'<div class="section row">\n' +
-		'	<div class="portfolio-details small-12 columns">\n' +
-		'		<div class="client-details right">\n' +
-		'			<h4 class="section-header client-details-header">{{title}}</h4>\n' +
-		'			<a href="" class="btn-toggle icn" ng-class="{\'up-chevron\': show, \'down-chevron\': !show}" ng-click="toggle()"></a>	\n' +
-		'			<div class="client-details-text" ng-if="show">\n' +
-		'				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, sunt, tempore, voluptate ad quasi molestias sint iure inventore nostrum minus repellendus temporibus nisi eius quia omnis labore voluptatibus harum vel.</p>\n' +
-		'			</div>	\n' +
-		'		</div>\n' +
-		'		<div class="portfolio-details-hero"></div>\n' +
-		'	</div>\n' +
-		'</div>');
+		'<portfolio-details item="item" show-controls="showControls"></portfolio-details>');
 }]);
 
 angular.module('app/portfolio/concepts/concepts.view.html', []).run(['$templateCache', function($templateCache) {
@@ -133,6 +134,25 @@ angular.module('app/portfolio/grid.view.html', []).run(['$templateCache', functi
 		'			</a>\n' +
 		'		</li>\n' +
 		'	</ul>\n' +
+		'	<a href="/" class="icn right-chevron controls next hide-for-small-only" ng-if="showControls"></a>\n' +
+		'</div>');
+}]);
+
+angular.module('app/portfolio/portfolio-details.view.html', []).run(['$templateCache', function($templateCache) {
+	'use strict';
+	$templateCache.put('app/portfolio/portfolio-details.view.html',
+		'<div class="section row">\n' +
+		'	<a href="/" class="icn left-chevron controls prev hide-for-small-only" ng-if="showControls"></a>\n' +
+		'	<div class="portfolio-details small-12 columns">\n' +
+		'		<div class="client-details right">\n' +
+		'			<h4 class="section-header client-details-header">{{item.title}}</h4>\n' +
+		'			<a href="" class="btn-toggle icn" ng-class="{\'up-chevron\': show, \'down-chevron\': !show}" ng-click="toggle()"></a>	\n' +
+		'			<div class="client-details-text" ng-if="show">\n' +
+		'				<p>{{item.text}}</p>\n' +
+		'			</div>	\n' +
+		'		</div>\n' +
+		'		<div class="portfolio-details-hero"></div>\n' +
+		'	</div>\n' +
 		'	<a href="/" class="icn right-chevron controls next hide-for-small-only" ng-if="showControls"></a>\n' +
 		'</div>');
 }]);

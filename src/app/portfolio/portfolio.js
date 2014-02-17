@@ -35,6 +35,31 @@ angular.module('portfolio', ['concepts', 'concept-details', 'wireframes', 'user-
 
 	/**
 	 * @ngdoc function
+	 * @name ng.factory:titleFactory
+	 * @function
+	 *
+	 * @description
+	 * [add a description]
+	 *
+	 * @returns {string} A new instance of this factory.
+	 *
+	 */
+	.factory('titleFactory', ['$routeParams', function ($routeParams) {
+		
+		return function (key) {
+			var titleArr = $routeParams[key].split('-'),
+					title = '';
+				
+			for (var i in titleArr) {
+				title += titleArr[i] + ' ';
+			}
+			return title;
+		};
+		
+	}])
+
+	/**
+	 * @ngdoc function
 	 * @name ng.directive:grid
 	 * @function
 	 *
@@ -55,6 +80,38 @@ angular.module('portfolio', ['concepts', 'concept-details', 'wireframes', 'user-
 			scope: {
 				items: '=',
 				showControls: '='
+			}
+		};
+	}])//mk:module
+
+		/**
+	 * @ngdoc function
+	 * @name ng.directive:itemDetails
+	 * @function
+	 *
+	 * @description
+	 * [add a description]
+	 *
+	 * @example
+	   <doc:example>
+	     <doc:source>
+	       <item-details></item-details>
+	     </doc:source>
+	   </doc:example>
+	 */
+	.directive('portfolioDetails', [function () {
+		return {
+			templateUrl: 'app/portfolio/portfolio-details.view.html',
+			restrict: 'E',
+			scope: {
+				item: '=',
+				showControls: '='
+			},
+			controller: function ($scope) {
+				$scope.show = true;
+				$scope.toggle = function () {
+					$scope.show = (($scope.show) ? false : true);
+				};
 			}
 		};
 	}])//mk:module

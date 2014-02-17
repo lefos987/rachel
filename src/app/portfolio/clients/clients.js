@@ -9,7 +9,7 @@
  * [add a description]
  *
  */
-angular.module('clients', [])
+angular.module('clients', ['clients-details'])
 
 	/**
 	 * @ngdoc function

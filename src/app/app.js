@@ -32,9 +32,17 @@ angular.module('app', ['templates', 'common', 'ngRoute', 'ngAnimate',
 				templateUrl: 'app/portfolio/clients/clients.view.html',
 				controller: 'ClientsCtrl'
 			})
+			.when('/clients/:clientId', {
+				templateUrl: 'app/portfolio/clients/clients-details.view.html',
+				controller: 'ClientsDetailsCtrl'
+			})
 			.when('/agency', {
 				templateUrl: 'app/portfolio/agency/agency.view.html',
 				controller: 'AgencyCtrl'
+			})
+			.when('/agency/:agencyId', {
+				templateUrl: 'app/portfolio/agency/agency-details.view.html',
+				controller: 'AgencyDetailsCtrl'
 			})
 			.otherwise({
 				redirectTo: '/'

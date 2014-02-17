@@ -2,31 +2,31 @@
 
 /**
  * @ngdoc function
- * @name ng.module:conceptdetails
+ * @name ng.module:clientsDetails
  * @function
  *
  * @description
  * [add a description]
  *
  */
-angular.module('concept-details', [])
+angular.module('clients-details', [])
 
 	/**
 	 * @ngdoc function
-	 * @name ng.controller:conceptdetailsCtrl
+	 * @name ng.controller:ClientsDetailsCtrl
 	 * @function
 	 *
 	 * @description
 	 * [add a description]
 	 *
 	 */
-	.controller('ConceptDetailsCtrl', ['$scope', 'titleFactory',
+	.controller('ClientsDetailsCtrl', ['$scope', 'titleFactory',
 		function ($scope, titleFactory) {
 
 		$scope.showControls = true;
-		var title = titleFactory('conceptId');
+		var title = titleFactory('clientId');
 		$scope.item = {
 			title: title,
-			text: 'Niki!'
+			text: 'Niki! client'
 		};
 	}]);

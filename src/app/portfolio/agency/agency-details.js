@@ -9,7 +9,7 @@
  * [add a description]
  *
  */
-angular.module('concept-details', [])
+angular.module('agency-details', [])
 
 	/**
 	 * @ngdoc function
@@ -20,13 +20,16 @@ angular.module('concept-details', [])
 	 * [add a description]
 	 *
 	 */
-	.controller('ConceptDetailsCtrl', ['$scope', 'titleFactory',
+	.controller('AgencyDetailsCtrl', ['$scope', 'titleFactory',
 		function ($scope, titleFactory) {
 
 		$scope.showControls = true;
-		var title = titleFactory('conceptId');
+		var title = titleFactory('agencyId');
+		/*
+		TODO: create a text details factory to find proper text based on id
+		*/
 		$scope.item = {
 			title: title,
-			text: 'Niki!'
+			text: 'Niki agency!'
 		};
 	}]);

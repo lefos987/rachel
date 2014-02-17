@@ -9,7 +9,7 @@
  * [add a description]
  *
  */
-angular.module('concepts', [])
+angular.module('concepts', ['concept-details'])
 
 	/**
 	 * @ngdoc function
