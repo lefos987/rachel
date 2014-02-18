@@ -21,7 +21,16 @@ angular.module('hero', [])
 	 *
 	 */
 	.controller('HeroCtrl', ['$scope', 'heroFactory', function ($scope, heroFactory) {
-		$scope.messages = ['promote your business', 'are value for money'];
+		$scope.messages = [
+			'promote your business',
+			'communicate a message',
+			'sell your products online',
+			'engage your audience',
+			'inform your customers',
+			'look good',
+			'are value for money',
+			'generate new leads'
+		];
 	}])
 
 	/**

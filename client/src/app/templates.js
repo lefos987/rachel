@@ -1,4 +1,4 @@
-angular.module('templates', ['app/app.view.html', 'app/contact/contact.view.html', 'app/hero/hero.view.html', 'app/info/info.view.html', 'app/navigation/navigation.view.html', 'app/portfolio/grid.view.html', 'app/portfolio/item.view.html', 'app/portfolio/list.view.html', 'app/portfolio/portfolio-details.view.html', 'app/portfolio/portfolio.view.html']);
+angular.module('templates', ['app/app.view.html', 'app/contact/contact.view.html', 'app/hero/hero.view.html', 'app/info/info.view.html', 'app/navigation/navigation.view.html', 'app/portfolio/grid.view.html', 'app/portfolio/item.view.html', 'app/portfolio/list.view.html', 'app/portfolio/portfolio-details.view.html']);
 
 angular.module('app/app.view.html', []).run(['$templateCache', function($templateCache) {
 	'use strict';
@@ -11,9 +11,12 @@ angular.module('app/contact/contact.view.html', []).run(['$templateCache', funct
 	$templateCache.put('app/contact/contact.view.html',
 		'<div class="section row">\n' +
 		'	<h4 class="section-header">Get in touch</h4>\n' +
-		'	<p class="contact-text large-6 medium-6 small-12 columns">\n' +
-		'		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, eaque, eveniet impedit cumque odio eos delectus iusto iure architecto aliquid libero aliquam sequi quia nam magnam animi distinctio ad neque.\n' +
-		'	</p>\n' +
+		'	<div class="contact-text large-6 medium-6 small-12 columns">\n' +
+		'		<p>Please note:  I am currently not looking to take on any new work at the moment</p>\n' +
+		'		<p>I’m based in London and always keen to hear about London-based contracts and opportunities.</p>\n' +
+		'		<p>If you’d like to get in touch please drop me a message and I’ll get back to you very soon</p>\n' +
+		'		<img src="assets/img/Img_me.png" alt="">\n' +
+		'	</div>\n' +
 		'	<form class="contact-form large-6 medium-6 small-12 columns">\n' +
 		'		<input type="text" placeholder="Name">\n' +
 		'		<input type="email" placeholder="Email">\n' +
@@ -43,20 +46,14 @@ angular.module('app/info/info.view.html', []).run(['$templateCache', function($t
 		'<div class="section row" ng-controller="InfoCtrl">\n' +
 		'	<div class="why-me large-7 columns">\n' +
 		'		<h4 class="section-header">Why me?</h4>\n' +
-		'		<p>\n' +
-		'			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, pariatur, dolorum, iure blanditiis dolores laborum esse eum sit nesciunt beatae voluptas inventore laboriosam magni iste porro asperiores temporibus. Quae, unde!\n' +
-		'		</p>\n' +
+		'		<p>Your website should work the way your users expect it to.\n' +
+		'		It should be organised in a way that makes it easier for them to find the information they need without pulling out their hair.\n' +
+		'		It should speak their language.\n' +
+		'		It should tell your users where they are and how to get where they’re going.</p>\n' +
 		'		<h5>Let me help</h5>\n' +
-		'		<p>\n' +
-		'			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, veritatis, sapiente ipsum voluptatum velit nobis a corporis voluptatibus veniam facilis aliquid dicta qui quod dolorem est reiciendis explicabo. Recusandae, quis.\n' +
-		'			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum inventore velit beatae quas tempora explicabo praesentium? Vel, doloremque aspernatur hic ut inventore eligendi! Eaque, voluptates itaque ipsa amet ipsum doloribus.\n' +
-		'			elit.\n' +
-		'		</p>\n' +
-		'		<img class="rachel" src="/assets/img/img_me.png" alt="">\n' +
-		'		<p>\n' +
-		'			Voluptatum inventore velit beatae quas tempora explicabo praesentium? Vel, doloremque aspernatur hic ut inventore eligendi! Eaque, voluptates itaque ipsa amet ipsum doloribus.\n' +
-		'			elit. Voluptatum inventore velit beatae quas tempora explicabo praesentium? Vel, doloremque aspernatur hic ut inventore eligendi! Eaque, voluptates itaque ipsa amet ipsum doloribus.\n' +
-		'			elit. Voluptatum inventore velit beatae quas tempora explicabo praesentium? Vel, doloremque aspernatur hic ut inventore eligendi! Eaque, voluptates itaque ipsa amet ipsum doloribus.\n' +
+		'		<p>As a user experience consultant, I will work closely with you to get an in-depth understanding of your business, your customers and what you’re trying to achieve digitally. I have 17 years experience working on digital projects for large companies. I specialise in crafting exceptional user experiences that are clear, simple, and engaging.</p>\n' +
+		'		<p>Technology and digital media have become more complex and more interactive, leading to a more demanding landscape for both clients and their customers. My role is to help you by not only creating the best possible user experience but also by understanding capabilities, risks, constraints and opportunities around all aspects of your project.</p>\n' +
+		'		<p>If you’d like to discuss working with me or you’d like more information please get in touch.\n' +
 		'		</p>\n' +
 		'	</div>\n' +
 		'	<div class="skills large-offset-1 large-4 columns">\n' +
@@ -120,6 +117,9 @@ angular.module('app/portfolio/portfolio-details.view.html', []).run(['$templateC
 		'			</a>	\n' +
 		'			<div class="client-details-text" ng-if="show">\n' +
 		'				<p>{{item.text}}</p>\n' +
+		'				<ul class="roles">\n' +
+		'					<li ng-repeat="role in item.roles">{{role}}</li>\n' +
+		'				</ul>\n' +
 		'			</div>	\n' +
 		'		</div>\n' +
 		'		<div class="portfolio-details-hero">\n' +
@@ -128,10 +128,4 @@ angular.module('app/portfolio/portfolio-details.view.html', []).run(['$templateC
 		'	</div>\n' +
 		'	<a href="/" class="icn right-chevron controls next hide-for-small-only" ng-if="showControls"></a>\n' +
 		'</div>');
-}]);
-
-angular.module('app/portfolio/portfolio.view.html', []).run(['$templateCache', function($templateCache) {
-	'use strict';
-	$templateCache.put('app/portfolio/portfolio.view.html',
-		'<grid items="menus" show-controls="showControls"></grid>');
 }]);

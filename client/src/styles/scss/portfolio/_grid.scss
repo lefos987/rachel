@@ -17,9 +17,6 @@ grid {
 			font-size: 18px;
 			position: relative;
 			border-top: 5px solid white;
-			&:hover {
-				border-top: 5px solid $blue;
-			}
 		}
 
 		.portfolio-grid-item-header {

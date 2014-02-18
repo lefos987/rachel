@@ -7,6 +7,9 @@
 			</a>	
 			<div class="client-details-text" ng-if="show">
 				<p>{{item.text}}</p>
+				<ul class="roles">
+					<li ng-repeat="role in item.roles">{{role}}</li>
+				</ul>
 			</div>	
 		</div>
 		<div class="portfolio-details-hero">
