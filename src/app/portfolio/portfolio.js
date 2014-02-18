@@ -60,6 +60,35 @@ angular.module('portfolio', ['concepts', 'concept-details', 'wireframes', 'user-
 
 	/**
 	 * @ngdoc function
+	 * @name ng.factory:itemDetailsFactory
+	 * @function
+	 *
+	 * @description
+	 * [add a description]
+	 *
+	 * @returns {string} A new instance of this factory.
+	 *
+	 */
+	.factory('itemDetailsFactory', [function () {
+		
+		return function (arr, title, key) {
+
+			function trim(str) {
+				return str.replace(/^\s\s*/, '').replace(/\s\s*$/, '');
+			}
+			for (var i in arr) {
+				var lcTitle = trim(title.toLowerCase());
+				var arrTitle = trim(arr[i].title);
+				if (arrTitle === lcTitle) {
+					return arr[i];
+				}
+			}
+		};
+		
+	}])
+
+	/**
+	 * @ngdoc function
 	 * @name ng.directive:grid
 	 * @function
 	 *

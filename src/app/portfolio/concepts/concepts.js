@@ -23,11 +23,11 @@ angular.module('concepts', ['concept-details'])
 	.controller('ConceptsCtrl', ['$scope', function ($scope) {
 		$scope.showControls = true;
 		$scope.items = [
-			{name: 'Thompson Reuters', url: '/concepts/thompson-reuters'},
-			{name: 'Burberry', url: '/concepts/burberry'},
-			{name: 'RMG', url: '/concepts/rmg'},
-			{name: 'Thompson Reuters', url: '/concepts/thompson-reuters'},
-			{name: 'Burberry', url: '/concepts/burberry'},
-			{name: 'RMG', url: '/concepts/rmg'}
+			{name: 'Thompson Reuters', url: '/concepts/thompson-reuters', img: 'assets/img/type/pf_img_square_agency_1.jpg'},
+			{name: 'Burberry', url: '/concepts/burberry', img: 'assets/img/type/pf_img_square_agency_1.jpg'},
+			{name: 'RMG', url: '/concepts/rmg', img: 'assets/img/type/pf_img_square_agency_1.jpg'},
+			{name: 'Thompson Reuters', url: '/concepts/thompson-reuters', img: 'assets/img/type/pf_img_square_agency_1.jpg'},
+			{name: 'Burberry', url: '/concepts/burberry', img: 'assets/img/type/pf_img_square_agency_1.jpg'},
+			{name: 'RMG', url: '/concepts/rmg', img: 'assets/img/type/pf_img_square_agency_1.jpg'}
 		];
 	}]);

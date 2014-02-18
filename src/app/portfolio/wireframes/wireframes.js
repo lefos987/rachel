@@ -23,11 +23,11 @@ angular.module('wireframes', ['wireframes-details'])
 	.controller('WireframesCtrl', ['$scope', function ($scope) {
 		$scope.showControls = true;
 		$scope.items = [
-			{name: 'Thompson Reuters', url: '/wireframes/thompson-reuters'},
-			{name: 'Burberry', url: '/wireframes/burberry'},
-			{name: 'RMG', url: '/wireframes/rmg'},
-			{name: 'Thompson Reuters', url: '/wireframes/thompson-reuters'},
-			{name: 'Burberry', url: '/wireframes/burberry'},
-			{name: 'RMG', url: '/wireframes/rmg'}
+			{name: 'Thompson Reuters', url: '/wireframes/thompson-reuters', img: 'assets/img/type/pf_img_square_agency_1.jpg'},
+			{name: 'Burberry', url: '/wireframes/burberry', img: 'assets/img/type/pf_img_square_agency_1.jpg'},
+			{name: 'RMG', url: '/wireframes/rmg', img: 'assets/img/type/pf_img_square_agency_1.jpg'},
+			{name: 'Thompson Reuters', url: '/wireframes/thompson-reuters', img: 'assets/img/type/pf_img_square_agency_1.jpg'},
+			{name: 'Burberry', url: '/wireframes/burberry', img: 'assets/img/type/pf_img_square_agency_1.jpg'},
+			{name: 'RMG', url: '/wireframes/rmg', img: 'assets/img/type/pf_img_square_agency_1.jpg'}
 		];
 	}]);

@@ -116,12 +116,15 @@ angular.module('app/portfolio/portfolio-details.view.html', []).run(['$templateC
 		'	<div class="portfolio-details small-12 columns">\n' +
 		'		<div class="client-details right">\n' +
 		'			<h4 class="section-header client-details-header">{{item.title}}</h4>\n' +
-		'			<a href="" class="btn-toggle icn" ng-class="{\'up-chevron\': show, \'down-chevron\': !show}" ng-click="toggle()"></a>	\n' +
+		'			<a href="" class="btn-toggle icn" ng-class="{\'up-chevron\': show, \'down-chevron\': !show}" ng-click="toggle()">\n' +
+		'			</a>	\n' +
 		'			<div class="client-details-text" ng-if="show">\n' +
 		'				<p>{{item.text}}</p>\n' +
 		'			</div>	\n' +
 		'		</div>\n' +
-		'		<div class="portfolio-details-hero"></div>\n' +
+		'		<div class="portfolio-details-hero">\n' +
+		'			<img src="{{item.img}}" alt="">\n' +
+		'		</div>\n' +
 		'	</div>\n' +
 		'	<a href="/" class="icn right-chevron controls next hide-for-small-only" ng-if="showControls"></a>\n' +
 		'</div>');

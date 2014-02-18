@@ -23,11 +23,11 @@ angular.module('agency', ['agency-details'])
 	.controller('AgencyCtrl', ['$scope', function ($scope) {
 		$scope.showControls = true;
 		$scope.items = [
-			{name: 'Thompson Reuters', url: '/agency/thompson-reuters'},
-			{name: 'Burberry', url: '/agency/burberry'},
-			{name: 'RMG', url: '/agency/rmg'},
-			{name: 'Thompson Reuters', url: '/agency/thompson-reuters'},
-			{name: 'Burberry', url: '/agency/burberry'},
-			{name: 'RMG', url: '/agency/rmg'}
+			{name: 'Thompson Reuters', url: '/agency/thompson-reuters', img: 'assets/img/type/pf_img_square_agency_1.jpg'},
+			{name: 'Burberry', url: '/agency/burberry', img: 'assets/img/type/pf_img_square_agency_1.jpg'},
+			{name: 'RMG', url: '/agency/rmg', img: 'assets/img/type/pf_img_square_agency_1.jpg'},
+			{name: 'Thompson Reuters', url: '/agency/thompson-reuters', img: 'assets/img/type/pf_img_square_agency_1.jpg'},
+			{name: 'Burberry', url: '/agency/burberry', img: 'assets/img/type/pf_img_square_agency_1.jpg'},
+			{name: 'RMG', url: '/agency/rmg', img: 'assets/img/type/pf_img_square_agency_1.jpg'}
 		];
 	}]);

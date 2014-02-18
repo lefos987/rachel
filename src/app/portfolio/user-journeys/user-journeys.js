@@ -23,11 +23,8 @@ angular.module('user-journeys', ['user-journey-details'])
 	.controller('UserJourneysCtrl', ['$scope', function ($scope) {
 		$scope.showControls = true;
 		$scope.items = [
-			{name: 'Thompson Reuters', url: '/user-journeys/thompson-reuters'},
-			{name: 'Burberry', url: '/user-journeys/burberry'},
-			{name: 'RMG', url: '/user-journeys/rmg'},
-			{name: 'Thompson Reuters', url: '/user-journeys/thompson-reuters'},
-			{name: 'Burberry', url: '/user-journeys/burberry'},
-			{name: 'RMG', url: '/user-journeys/rmg'}
+			{name: 'Thompson Reuters', url: '/user-journeys/thompson-reuters', img: 'assets/img/type/pf_img_square_agency_1.jpg'},
+			{name: 'Lloyds', url: '/user-journeys/lloyds', img: 'assets/img/type/pf_img_square_agency_1.jpg'},
+			{name: 'RMG', url: '/user-journeys/rmg', img: 'assets/img/type/pf_img_square_agency_1.jpg'}
 		];
 	}]);
