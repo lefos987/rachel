@@ -22,7 +22,7 @@ angular.module('agency', ['agency-details'])
 	 */
 	.controller('AgencyCtrl', ['$scope', function ($scope) {
 		$scope.showControls = true;
-		$scope.agency = [
+		$scope.items = [
 			{name: 'Thompson Reuters', url: '/agency/thompson-reuters'},
 			{name: 'Burberry', url: '/agency/burberry'},
 			{name: 'RMG', url: '/agency/rmg'},

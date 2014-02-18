@@ -9,39 +9,51 @@ angular.module('app', ['templates', 'common', 'ngRoute', 'ngAnimate',
 				controller: 'PortfolioCtrl'
 			})
 			.when('/concepts', {
-				templateUrl: 'app/portfolio/concepts/concepts.view.html',
+				templateUrl: 'app/portfolio/list.view.html',
 				controller: 'ConceptsCtrl'
 			})
 			.when('/concepts/:conceptId', {
-				templateUrl: 'app/portfolio/concepts/concept-details.view.html',
+				templateUrl: 'app/portfolio/item.view.html',
 				controller: 'ConceptDetailsCtrl'
 			})
 			.when('/wireframes', {
-				templateUrl: 'app/portfolio/wireframes/wireframes.view.html',
+				templateUrl: 'app/portfolio/list.view.html',
 				controller: 'WireframesCtrl'
 			})
+			.when('/wireframes/:wireframeId', {
+				templateUrl: 'app/portfolio/item.view.html',
+				controller: 'WireframesDetailsCtrl'
+			})
 			.when('/user-journeys', {
-				templateUrl: 'app/portfolio/user-journeys/user-journeys.view.html',
+				templateUrl: 'app/portfolio/list.view.html',
 				controller: 'UserJourneysCtrl'
 			})
+			.when('/user-journeys/:userJourneyId', {
+				templateUrl: 'app/portfolio/item.view.html',
+				controller: 'UserJourneysDetailsCtrl'
+			})
 			.when('/design', {
-				templateUrl: 'app/portfolio/design/design.view.html',
+				templateUrl: 'app/portfolio/list.view.html',
 				controller: 'DesignCtrl'
 			})
+			.when('/design/:designId', {
+				templateUrl: 'app/portfolio/item.view.html',
+				controller: 'DesignDetailsCtrl'
+			})
 			.when('/clients', {
-				templateUrl: 'app/portfolio/clients/clients.view.html',
+				templateUrl: 'app/portfolio/list.view.html',
 				controller: 'ClientsCtrl'
 			})
 			.when('/clients/:clientId', {
-				templateUrl: 'app/portfolio/clients/clients-details.view.html',
+				templateUrl: 'app/portfolio/item.view.html',
 				controller: 'ClientsDetailsCtrl'
 			})
 			.when('/agency', {
-				templateUrl: 'app/portfolio/agency/agency.view.html',
+				templateUrl: 'app/portfolio/list.view.html',
 				controller: 'AgencyCtrl'
 			})
 			.when('/agency/:agencyId', {
-				templateUrl: 'app/portfolio/agency/agency-details.view.html',
+				templateUrl: 'app/portfolio/item.view.html',
 				controller: 'AgencyDetailsCtrl'
 			})
 			.otherwise({

@@ -9,7 +9,7 @@
  * [add a description]
  *
  */
-angular.module('user-journeys', [])
+angular.module('user-journeys', ['user-journey-details'])
 
 	/**
 	 * @ngdoc function
@@ -22,7 +22,7 @@ angular.module('user-journeys', [])
 	 */
 	.controller('UserJourneysCtrl', ['$scope', function ($scope) {
 		$scope.showControls = true;
-		$scope.userJourneys = [
+		$scope.items = [
 			{name: 'Thompson Reuters', url: '/user-journeys/thompson-reuters'},
 			{name: 'Burberry', url: '/user-journeys/burberry'},
 			{name: 'RMG', url: '/user-journeys/rmg'},

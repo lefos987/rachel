@@ -1,4 +1,4 @@
-angular.module('templates', ['app/app.view.html', 'app/contact/contact.view.html', 'app/hero/hero.view.html', 'app/info/info.view.html', 'app/navigation/navigation.view.html', 'app/portfolio/agency/agency-details.view.html', 'app/portfolio/agency/agency.view.html', 'app/portfolio/clients/clients-details.view.html', 'app/portfolio/clients/clients.view.html', 'app/portfolio/concepts/concept-details.view.html', 'app/portfolio/concepts/concepts.view.html', 'app/portfolio/design/design.view.html', 'app/portfolio/grid.view.html', 'app/portfolio/portfolio-details.view.html', 'app/portfolio/portfolio.view.html', 'app/portfolio/user-journeys/user-journeys.view.html', 'app/portfolio/wireframes/wireframes.view.html']);
+angular.module('templates', ['app/app.view.html', 'app/contact/contact.view.html', 'app/hero/hero.view.html', 'app/info/info.view.html', 'app/navigation/navigation.view.html', 'app/portfolio/grid.view.html', 'app/portfolio/item.view.html', 'app/portfolio/list.view.html', 'app/portfolio/portfolio-details.view.html', 'app/portfolio/portfolio.view.html']);
 
 angular.module('app/app.view.html', []).run(['$templateCache', function($templateCache) {
 	'use strict';
@@ -79,48 +79,6 @@ angular.module('app/navigation/navigation.view.html', []).run(['$templateCache',
 		'</ul>');
 }]);
 
-angular.module('app/portfolio/agency/agency-details.view.html', []).run(['$templateCache', function($templateCache) {
-	'use strict';
-	$templateCache.put('app/portfolio/agency/agency-details.view.html',
-		'<portfolio-details item="item" show-controls="showControls"></portfolio-details>');
-}]);
-
-angular.module('app/portfolio/agency/agency.view.html', []).run(['$templateCache', function($templateCache) {
-	'use strict';
-	$templateCache.put('app/portfolio/agency/agency.view.html',
-		'<grid items="agency" show-controls="showControls"></grid>');
-}]);
-
-angular.module('app/portfolio/clients/clients-details.view.html', []).run(['$templateCache', function($templateCache) {
-	'use strict';
-	$templateCache.put('app/portfolio/clients/clients-details.view.html',
-		'<portfolio-details item="item" show-controls="showControls"></portfolio-details>');
-}]);
-
-angular.module('app/portfolio/clients/clients.view.html', []).run(['$templateCache', function($templateCache) {
-	'use strict';
-	$templateCache.put('app/portfolio/clients/clients.view.html',
-		'<grid items="clients" show-controls="showControls"></grid>');
-}]);
-
-angular.module('app/portfolio/concepts/concept-details.view.html', []).run(['$templateCache', function($templateCache) {
-	'use strict';
-	$templateCache.put('app/portfolio/concepts/concept-details.view.html',
-		'<portfolio-details item="item" show-controls="showControls"></portfolio-details>');
-}]);
-
-angular.module('app/portfolio/concepts/concepts.view.html', []).run(['$templateCache', function($templateCache) {
-	'use strict';
-	$templateCache.put('app/portfolio/concepts/concepts.view.html',
-		'<grid items="concepts" show-controls="showControls"></grid>');
-}]);
-
-angular.module('app/portfolio/design/design.view.html', []).run(['$templateCache', function($templateCache) {
-	'use strict';
-	$templateCache.put('app/portfolio/design/design.view.html',
-		'<grid items="designs" show-controls="showControls"></grid>');
-}]);
-
 angular.module('app/portfolio/grid.view.html', []).run(['$templateCache', function($templateCache) {
 	'use strict';
 	$templateCache.put('app/portfolio/grid.view.html',
@@ -136,6 +94,18 @@ angular.module('app/portfolio/grid.view.html', []).run(['$templateCache', functi
 		'	</ul>\n' +
 		'	<a href="/" class="icn right-chevron controls next hide-for-small-only" ng-if="showControls"></a>\n' +
 		'</div>');
+}]);
+
+angular.module('app/portfolio/item.view.html', []).run(['$templateCache', function($templateCache) {
+	'use strict';
+	$templateCache.put('app/portfolio/item.view.html',
+		'<portfolio-details item="item" show-controls="showControls"></portfolio-details>');
+}]);
+
+angular.module('app/portfolio/list.view.html', []).run(['$templateCache', function($templateCache) {
+	'use strict';
+	$templateCache.put('app/portfolio/list.view.html',
+		'<grid items="items" show-controls="showControls"></grid>');
 }]);
 
 angular.module('app/portfolio/portfolio-details.view.html', []).run(['$templateCache', function($templateCache) {
@@ -161,16 +131,4 @@ angular.module('app/portfolio/portfolio.view.html', []).run(['$templateCache', f
 	'use strict';
 	$templateCache.put('app/portfolio/portfolio.view.html',
 		'<grid items="menus" show-controls="showControls"></grid>');
-}]);
-
-angular.module('app/portfolio/user-journeys/user-journeys.view.html', []).run(['$templateCache', function($templateCache) {
-	'use strict';
-	$templateCache.put('app/portfolio/user-journeys/user-journeys.view.html',
-		'<grid items="userJourneys" show-controls="showControls"></grid>');
-}]);
-
-angular.module('app/portfolio/wireframes/wireframes.view.html', []).run(['$templateCache', function($templateCache) {
-	'use strict';
-	$templateCache.put('app/portfolio/wireframes/wireframes.view.html',
-		'<grid items="wireframes" show-controls="showControls"></grid>');
 }]);

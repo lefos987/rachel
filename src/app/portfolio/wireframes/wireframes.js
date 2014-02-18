@@ -9,7 +9,7 @@
  * [add a description]
  *
  */
-angular.module('wireframes', [])
+angular.module('wireframes', ['wireframes-details'])
 
 	/**
 	 * @ngdoc function
@@ -22,7 +22,7 @@ angular.module('wireframes', [])
 	 */
 	.controller('WireframesCtrl', ['$scope', function ($scope) {
 		$scope.showControls = true;
-		$scope.wireframes = [
+		$scope.items = [
 			{name: 'Thompson Reuters', url: '/wireframes/thompson-reuters'},
 			{name: 'Burberry', url: '/wireframes/burberry'},
 			{name: 'RMG', url: '/wireframes/rmg'},

@@ -9,7 +9,7 @@
  * [add a description]
  *
  */
-angular.module('design', [])
+angular.module('design', ['design-details'])
 
 	/**
 	 * @ngdoc function
@@ -22,7 +22,7 @@ angular.module('design', [])
 	 */
 	.controller('DesignCtrl', ['$scope', function ($scope) {
 		$scope.showControls = true;
-		$scope.designs = [
+		$scope.items = [
 			{name: 'Thompson Reuters', url: '/design/thompson-reuters'},
 			{name: 'Burberry', url: '/design/burberry'},
 			{name: 'RMG', url: '/design/rmg'},

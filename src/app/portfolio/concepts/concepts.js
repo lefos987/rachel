@@ -22,7 +22,7 @@ angular.module('concepts', ['concept-details'])
 	 */
 	.controller('ConceptsCtrl', ['$scope', function ($scope) {
 		$scope.showControls = true;
-		$scope.concepts = [
+		$scope.items = [
 			{name: 'Thompson Reuters', url: '/concepts/thompson-reuters'},
 			{name: 'Burberry', url: '/concepts/burberry'},
 			{name: 'RMG', url: '/concepts/rmg'},

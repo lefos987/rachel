@@ -22,7 +22,7 @@ angular.module('clients', ['clients-details'])
 	 */
 	.controller('ClientsCtrl', ['$scope', function ($scope) {
 		$scope.showControls = true;
-		$scope.clients = [
+		$scope.items = [
 			{name: 'Thompson Reuters', url: '/clients/thompson-reuters'},
 			{name: 'Burberry', url: '/clients/burberry'},
 			{name: 'RMG', url: '/clients/rmg'},
