@@ -1,0 +1,28 @@
+.orbit-container {
+	height: 100%;
+}
+
+.orbit-slides-container {
+	height: $portfolioH - 75;
+
+	@media #{$small-only} {
+		height: $portfolioH - 500;
+	}
+
+	@media #{$medium-only} {
+		height: $portfolioH - 250;
+	}
+}
+
+.orbit-slide-number {
+	background: $blue !important;
+	padding: 5px !important;
+	top: auto !important;
+	left: auto !important;
+	right: 10px !important;
+	bottom: 85px !important;
+}
+
+.orbit-caption {
+	background: $blue !important;
+}

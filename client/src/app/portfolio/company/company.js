@@ -67,21 +67,98 @@ angular.module('company', [])
 					'Board level presentation'
 				],
 				img: [
-					'assets/img/company/pf_img_square_barclays.jpg',
-					'assets/img/company/pf_img_square_barclays.jpg',
-					'assets/img/company/pf_img_square_barclays.jpg',
-					'assets/img/company/pf_img_square_barclays.jpg'
+					{
+						value: 'assets/img/large/pf_img_barclays_1.jpg',
+						caption: 'Barclays One'
+					},
+					{
+						value: 'assets/img/large/pf_img_barclays_2.jpg',
+						caption: 'Barclays Two'
+					},
+					{
+						value: 'assets/img/large/pf_img_barclays_3.jpg',
+						caption: 'Barclays Three'
+					},
+					{
+						value: 'assets/img/large/pf_img_barclays_4.jpg',
+						caption: 'Barclays Four'
+					},
+					{
+						value: 'assets/img/large/pf_img_barclays_5.jpg',
+						caption: 'Barclays Five'
+					},
+					{
+						value: 'assets/img/large/pf_img_barclays_7.jpg',
+						caption: 'Barclays Seven'
+					},
+					{
+						value: 'assets/img/large/pf_img_barclays_8.jpg',
+						caption: 'Barclays Eight'
+					},
+					{
+						value: 'assets/img/large/pf_img_barclays_9.jpg',
+						caption: 'Barclays Nine'
+					}
 				],
 			},
 			{
 				id: 'bskyb',
-				title: 'BSkyB',
-				text: '/company/bskyb',
+				title: 'Sky Entertainment',
+				text: 'Primarily working on a re-design, for all devices, for Sky Movies, in ' +
+							'collaboration with Method agency. Included regular updates for all Sky ' +
+							'Entertainment sites (Sky One, Sky Movies, Sky Atlantic and Living).',
+				roles: [
+					'Design lead',
+					'Research',
+					'Concept visuals',
+					'Prototypes',
+					'Agile'
+				],
 				img: [
-					'assets/img/type/pf_img_square_bskyb.jpg',
-					'assets/img/type/pf_img_square_bskyb.jpg',
-					'assets/img/type/pf_img_square_bskyb.jpg',
-					'assets/img/type/pf_img_square_bskyb.jpg'
+					{
+						value: 'assets/img/large/pf_img_bskyb_1.jpg',
+						caption: 'BSkyB One'
+					},
+					{
+						value: 'assets/img/large/pf_img_bskyb_2.jpg',
+						caption: 'BSkyB Two'
+					},
+					{
+						value: 'assets/img/large/pf_img_bskyb_3.jpg',
+						caption: 'BSkyB Three'
+					},
+					{
+						value: 'assets/img/large/pf_img_bskyb_4.jpg',
+						caption: 'BSkyB Four'
+					},
+					{
+						value: 'assets/img/large/pf_img_bskyb_5.jpg',
+						caption: 'BSkyB Five'
+					},
+					{
+						value: 'assets/img/large/pf_img_bskyb_6.jpg',
+						caption: 'BSkyB Six'
+					},
+					{
+						value: 'assets/img/large/pf_img_bskyb_7.jpg',
+						caption: 'BSkyB Seven'
+					},
+					{
+						value: 'assets/img/large/pf_img_bskyb_8.jpg',
+						caption: 'BSkyB Eight'
+					},
+					{
+						value: 'assets/img/large/pf_img_bskyb_9.jpg',
+						caption: 'BSkyB Nine'
+					},
+					{
+						value: 'assets/img/large/pf_img_bskyb_10.jpg',
+						caption: 'BSkyB Ten'
+					},
+					{
+						value: 'assets/img/large/pf_img_bskyb_11.jpg',
+						caption: 'BSkyB Eleven'
+					}
 				]
 			},
 			{
@@ -96,10 +173,22 @@ angular.module('company', [])
 					'User testing'
 				],
 				img: [
-					'assets/img/type/pf_img_square_bt.jpg',
-					'assets/img/type/pf_img_square_bt.jpg',
-					'assets/img/type/pf_img_square_bt.jpg',
-					'assets/img/type/pf_img_square_bt.jpg'
+					{
+						value: 'assets/img/large/pf_img_bt_1.jpg',
+						caption: 'BT Global Services One'
+					},
+					{
+						value: 'assets/img/large/pf_img_bt_2.jpg',
+						caption: 'BT Global Services Two'
+					},
+					{
+						value: 'assets/img/large/pf_img_bt_3.jpg',
+						caption: 'BT Global Services Three'
+					},
+					{
+						value: 'assets/img/large/pf_img_bt_4.jpg',
+						caption: 'BT Global Services Four'
+					}
 				]
 			},
 			{
@@ -121,10 +210,34 @@ angular.module('company', [])
 					'Resourcing'
 				],
 				img: [
-					'assets/img/type/pf_img_square_cap.jpg',
-					'assets/img/type/pf_img_square_cap.jpg',
-					'assets/img/type/pf_img_square_cap.jpg',
-					'assets/img/type/pf_img_square_cap.jpg'
+					{
+						value: 'assets/img/large/pf_img_cap_1.jpg',
+						caption: 'Capgemini One'
+					},
+					{
+						value: 'assets/img/large/pf_img_cap_2.jpg',
+						caption: 'Capgemini Two'
+					},
+					{
+						value: 'assets/img/large/pf_img_cap_3.jpg',
+						caption: 'Capgemini Three'
+					},
+					{
+						value: 'assets/img/large/pf_img_cap_4.jpg',
+						caption: 'Capgemini Four'
+					},
+					{
+						value: 'assets/img/large/pf_img_cap_5.jpg',
+						caption: 'Capgemini Five'
+					},
+					{
+						value: 'assets/img/large/pf_img_cap_6.jpg',
+						caption: 'Capgemini Six'
+					},
+					{
+						value: 'assets/img/large/pf_img_cap_7.jpg',
+						caption: 'Capgemini Seven'
+					}
 				]
 			},
 			{
@@ -139,10 +252,22 @@ angular.module('company', [])
 					'Prototypes'
 				],
 				img: [
-					'assets/img/type/pf_img_square_capitol.jpg',
-					'assets/img/type/pf_img_square_capitol.jpg',
-					'assets/img/type/pf_img_square_capitol.jpg',
-					'assets/img/type/pf_img_square_capitol.jpg'
+					{
+						value: 'assets/img/company/pf_img_square_capitol.jpg',
+						caption: 'Caption One'
+					},
+					{
+						value: 'assets/img/company/pf_img_square_capitol.jpg',
+						caption: 'Caption One'
+					},
+					{
+						value: 'assets/img/company/pf_img_square_capitol.jpg',
+						caption: 'Caption One'
+					},
+					{
+						value: 'assets/img/company/pf_img_square_capitol.jpg',
+						caption: 'Caption One'
+					}
 				]
 			},
 			{
@@ -150,10 +275,22 @@ angular.module('company', [])
 				title: 'EDSA',
 				text: '/company/edsa',
 				img: [
-					'assets/img/type/pf_img_square_edsa.jpg',
-					'assets/img/type/pf_img_square_edsa.jpg',
-					'assets/img/type/pf_img_square_edsa.jpg',
-					'assets/img/type/pf_img_square_edsa.jpg'
+					{
+						value: 'assets/img/company/pf_img_square_edsa.jpg',
+						caption: 'Caption One'
+					},
+					{
+						value: 'assets/img/company/pf_img_square_edsa.jpg',
+						caption: 'Caption One'
+					},
+					{
+						value: 'assets/img/company/pf_img_square_edsa.jpg',
+						caption: 'Caption One'
+					},
+					{
+						value: 'assets/img/company/pf_img_square_edsa.jpg',
+						caption: 'Caption One'
+					}
 				]
 			},
 			{
@@ -161,10 +298,22 @@ angular.module('company', [])
 				title: 'Hatchett',
 				text: '/company/hatchett',
 				img: [
-					'assets/img/type/pf_img_square_hatchett.jpg',
-					'assets/img/type/pf_img_square_hatchett.jpg',
-					'assets/img/type/pf_img_square_hatchett.jpg',
-					'assets/img/type/pf_img_square_hatchett.jpg'
+					{
+						value: 'assets/img/company/pf_img_square_hatchett.jpg',
+						caption: 'Caption One'
+					},
+					{
+						value: 'assets/img/company/pf_img_square_hatchett.jpg',
+						caption: 'Caption One'
+					},
+					{
+						value: 'assets/img/company/pf_img_square_hatchett.jpg',
+						caption: 'Caption One'
+					},
+					{
+						value: 'assets/img/company/pf_img_square_hatchett.jpg',
+						caption: 'Caption One'
+					}
 				]
 			},
 			{
@@ -180,21 +329,52 @@ angular.module('company', [])
 					'Prototypes'
 				],
 				img: [
-					'assets/img/type/pf_img_square_lloyds.jpg',
-					'assets/img/type/pf_img_square_lloyds.jpg',
-					'assets/img/type/pf_img_square_lloyds.jpg',
-					'assets/img/type/pf_img_square_lloyds.jpg'
+					{
+						value: 'assets/img/company/pf_img_square_lloyds.jpg',
+						caption: 'Caption One'
+					},
+					{
+						value: 'assets/img/company/pf_img_square_lloyds.jpg',
+						caption: 'Caption One'
+					},
+					{
+						value: 'assets/img/company/pf_img_square_lloyds.jpg',
+						caption: 'Caption One'
+					},
+					{
+						value: 'assets/img/company/pf_img_square_lloyds.jpg',
+						caption: 'Caption One'
+					}
 				]
 			},
 			{
 				id: 'ngrid',
-				title: 'NgGrid',
-				text: '/company/nggrid',
+				title: 'ngrid',
+				text: 'Creating an intranet for all staff of the energy supplier\'s to contain information, ' +
+							'training, personnel, etc.',
+				roles: [
+					'Design',
+					'IA & User Journey Flows',
+					'User Testing',
+					'Style Guide'
+				],
 				img: [
-					'assets/img/type/pf_img_square_nggrid.jpg',
-					'assets/img/type/pf_img_square_nggrid.jpg',
-					'assets/img/type/pf_img_square_nggrid.jpg',
-					'assets/img/type/pf_img_square_nggrid.jpg'
+					{
+						value: 'assets/img/company/pf_img_square_nggrid.jpg',
+						caption: 'Caption One'
+					},
+					{
+						value: 'assets/img/company/pf_img_square_nggrid.jpg',
+						caption: 'Caption One'
+					},
+					{
+						value: 'assets/img/company/pf_img_square_nggrid.jpg',
+						caption: 'Caption One'
+					},
+					{
+						value: 'assets/img/company/pf_img_square_nggrid.jpg',
+						caption: 'Caption One'
+					}
 				]
 			},
 			{
@@ -211,10 +391,22 @@ angular.module('company', [])
 					'User testing'
 				],
 				img: [
-					'assets/img/type/pf_img_square_tr.jpg',
-					'assets/img/type/pf_img_square_tr.jpg',
-					'assets/img/type/pf_img_square_tr.jpg',
-					'assets/img/type/pf_img_square_tr.jpg'
+					{
+						value: 'assets/img/company/pf_img_square_tr.jpg',
+						caption: 'Caption One'
+					},
+					{
+						value: 'assets/img/company/pf_img_square_tr.jpg',
+						caption: 'Caption One'
+					},
+					{
+						value: 'assets/img/company/pf_img_square_tr.jpg',
+						caption: 'Caption One'
+					},
+					{
+						value: 'assets/img/company/pf_img_square_tr.jpg',
+						caption: 'Caption One'
+					}
 				]
 			},
 			{
@@ -229,21 +421,50 @@ angular.module('company', [])
 					'User testing'
 				],
 				img: [
-					'assets/img/type/pf_img_square_tui.jpg',
-					'assets/img/type/pf_img_square_tui.jpg',
-					'assets/img/type/pf_img_square_tui.jpg',
-					'assets/img/type/pf_img_square_tui.jpg'
+					{
+						value: 'assets/img/company/pf_img_square_tui.jpg',
+						caption: 'Caption One'
+					},
+					{
+						value: 'assets/img/company/pf_img_square_tui.jpg',
+						caption: 'Caption One'
+					},
+					{
+						value: 'assets/img/company/pf_img_square_tui.jpg',
+						caption: 'Caption One'
+					},
+					{
+						value: 'assets/img/company/pf_img_square_tui.jpg',
+						caption: 'Caption One'
+					}
 				]
 			},
 			{
 				id: 'virgin',
-				title: 'Virgin',
-				text: '/company/virgin',
+				title: 'Virgin Media',
+				text: 'Took on a lead role re-designing VIrgin Media\'s movies, music and TV channels. ' +
+							'It includes an on-demand viewing and download service, as well as news, reviews, ' +
+							'features, quizzes, galleries, shopping and search.',
+				roles: [
+					'Design'
+				],
 				img: [
-					'assets/img/type/pf_img_square_virgin.jpg',
-					'assets/img/type/pf_img_square_virgin.jpg',
-					'assets/img/type/pf_img_square_virgin.jpg',
-					'assets/img/type/pf_img_square_virgin.jpg'
+					{
+						value: 'assets/img/company/pf_img_square_virgin.jpg',
+						caption: 'Caption One'
+					},
+					{
+						value: 'assets/img/company/pf_img_square_virgin.jpg',
+						caption: 'Caption One'
+					},
+					{
+						value: 'assets/img/company/pf_img_square_virgin.jpg',
+						caption: 'Caption One'
+					},
+					{
+						value: 'assets/img/company/pf_img_square_virgin.jpg',
+						caption: 'Caption One'
+					}
 				]
 			}
 		];

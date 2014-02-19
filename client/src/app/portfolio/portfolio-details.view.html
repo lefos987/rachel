@@ -1,20 +1,19 @@
 <div class="section row">
-	<a href="/" class="icn left-chevron controls prev hide-for-small-only" ng-if="showControls"></a>
+	<a href="/#portfolio" class="back hide-for-small-only">Back</a>
+	<a href="" class="icn left-chevron controls prev hide-for-small-only" ng-if="showControls" ng-click="prev()"></a>
 	<div class="portfolio-details small-12 columns">
 		<div class="client-details right">
 			<h4 class="section-header client-details-header">{{item.title}}</h4>
-			<a href="" class="btn-toggle icn" ng-class="{'up-chevron': show, 'down-chevron': !show}" ng-click="toggle()">
+			<a href="" class="btn-toggle icn hide-for-small-only" ng-class="{'up-chevron': show, 'down-chevron': !show}" ng-click="toggle()">
 			</a>	
-			<div class="client-details-text" ng-if="show">
+			<div class="client-details-text hide-for-small-only" ng-if="show">
 				<p>{{item.text}}</p>
 				<ul class="roles">
 					<li ng-repeat="role in item.roles">{{role}}</li>
 				</ul>
 			</div>	
 		</div>
-		<div class="portfolio-details-hero">
-			<img src="{{item.img}}" alt="">
-		</div>
+		<orbit items="item.img" interval="10000"></orbit>
 	</div>
-	<a href="/" class="icn right-chevron controls next hide-for-small-only" ng-if="showControls"></a>
+	<a href="" class="icn right-chevron controls next hide-for-small-only" ng-if="showControls" ng-click="next()"></a>
 </div>

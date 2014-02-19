@@ -1,9 +1,33 @@
-angular.module('templates', ['app/app.view.html', 'app/contact/contact.view.html', 'app/hero/hero.view.html', 'app/info/info.view.html', 'app/navigation/navigation.view.html', 'app/portfolio/grid.view.html', 'app/portfolio/item.view.html', 'app/portfolio/list.view.html', 'app/portfolio/portfolio-details.view.html']);
+angular.module('templates', ['app/app.view.html', 'app/common/orbit.view.html', 'app/contact/contact.view.html', 'app/hero/hero.view.html', 'app/info/info.view.html', 'app/navigation/navigation.view.html', 'app/portfolio/grid.view.html', 'app/portfolio/item.view.html', 'app/portfolio/list.view.html', 'app/portfolio/portfolio-details.view.html']);
 
 angular.module('app/app.view.html', []).run(['$templateCache', function($templateCache) {
 	'use strict';
 	$templateCache.put('app/app.view.html',
 		'');
+}]);
+
+angular.module('app/common/orbit.view.html', []).run(['$templateCache', function($templateCache) {
+	'use strict';
+	$templateCache.put('app/common/orbit.view.html',
+		'<div class="orbit-container">\n' +
+		'	<ul class="orbit-slides-container">\n' +
+		'		<li class="active" ng-swipe-left="next()" ng-swipe-right="prev()">\n' +
+		'			<img ng-src="{{currentItem.value}}">\n' +
+		'			<div class="orbit-caption">\n' +
+		'				<span>{{currentItem.caption}}</span>\n' +
+		'			</div>\n' +
+		'		</li>\n' +
+		'	</ul>\n' +
+		'\n' +
+		'	<div class="orbit-slide-number hide-for-small-only">\n' +
+		'		<span>{{currentIndex + 1}}</span> of <span>{{items.length}}</span>\n' +
+		'	</div>\n' +
+		'	<!-- Orbit Bullet Slide Indicator -->\n' +
+		'	<ol class="orbit-bullets">\n' +
+		'		<li ng-repeat="item in items" ng-class="{active: isActive(item)}" ng-click="select(item)"></li>\n' +
+		'	</ol>\n' +
+		'\n' +
+		'</div>');
 }]);
 
 angular.module('app/contact/contact.view.html', []).run(['$templateCache', function($templateCache) {
@@ -109,23 +133,22 @@ angular.module('app/portfolio/portfolio-details.view.html', []).run(['$templateC
 	'use strict';
 	$templateCache.put('app/portfolio/portfolio-details.view.html',
 		'<div class="section row">\n' +
-		'	<a href="/" class="icn left-chevron controls prev hide-for-small-only" ng-if="showControls"></a>\n' +
+		'	<a href="/#portfolio" class="back hide-for-small-only">Back</a>\n' +
+		'	<a href="" class="icn left-chevron controls prev hide-for-small-only" ng-if="showControls" ng-click="prev()"></a>\n' +
 		'	<div class="portfolio-details small-12 columns">\n' +
 		'		<div class="client-details right">\n' +
 		'			<h4 class="section-header client-details-header">{{item.title}}</h4>\n' +
-		'			<a href="" class="btn-toggle icn" ng-class="{\'up-chevron\': show, \'down-chevron\': !show}" ng-click="toggle()">\n' +
+		'			<a href="" class="btn-toggle icn hide-for-small-only" ng-class="{\'up-chevron\': show, \'down-chevron\': !show}" ng-click="toggle()">\n' +
 		'			</a>	\n' +
-		'			<div class="client-details-text" ng-if="show">\n' +
+		'			<div class="client-details-text hide-for-small-only" ng-if="show">\n' +
 		'				<p>{{item.text}}</p>\n' +
 		'				<ul class="roles">\n' +
 		'					<li ng-repeat="role in item.roles">{{role}}</li>\n' +
 		'				</ul>\n' +
 		'			</div>	\n' +
 		'		</div>\n' +
-		'		<div class="portfolio-details-hero">\n' +
-		'			<img src="{{item.img}}" alt="">\n' +
-		'		</div>\n' +
+		'		<orbit items="item.img" interval="10000"></orbit>\n' +
 		'	</div>\n' +
-		'	<a href="/" class="icn right-chevron controls next hide-for-small-only" ng-if="showControls"></a>\n' +
+		'	<a href="" class="icn right-chevron controls next hide-for-small-only" ng-if="showControls" ng-click="next()"></a>\n' +
 		'</div>');
 }]);

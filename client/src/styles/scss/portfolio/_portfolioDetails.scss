@@ -5,12 +5,22 @@ portfolio-details {
 .portfolio-details {
 	padding: 0;
 	margin: 0 10px;
+	height: $portfolioH;
+	
+	@media #{$small-only} {
+		height: $portfolioH - 450;
+	}
+
+	@media #{$medium-only} {
+		height: $portfolioH - 200;
+	}
 
 	.client-details {
 		width: 45%;
 		position: absolute;
 		right: 0;
 		top: -57px;
+		z-index: 10;
 		border-top: 5px solid $blue;
 
 		@media #{$small-only} {
@@ -26,14 +36,14 @@ portfolio-details {
 	}
 	
 	.client-details-text {
-		background-color:rgba(255, 255, 255, 0.8);
+		background-color: rgba(71, 156, 243, 1);
+		color: white;
 		padding: 20px 10px;
 		overflow: auto;
 	}
 
 	.portfolio-details-hero {
-		background: pink;
-		height: 500px;
+		
 	}
 
 	.btn-toggle {
@@ -42,4 +52,10 @@ portfolio-details {
 		right: 10px;
 		top: -5px;
 	}
+}
+
+.back {
+	position: relative;
+	top: -20px;
+	margin-left: 20px;
 }

@@ -1,3 +1,3 @@
 'use strict';
 
-angular.module('dependencies', []);
+angular.module('dependencies', ['orbit']);
