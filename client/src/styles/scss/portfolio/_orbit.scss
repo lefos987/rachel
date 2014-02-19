@@ -15,14 +15,10 @@
 }
 
 .orbit-slide-number {
-	background: $blue !important;
-	padding: 5px !important;
-	top: auto !important;
-	left: auto !important;
-	right: 10px !important;
-	bottom: 85px !important;
+	display: none !important;
 }
 
 .orbit-caption {
 	background: $blue !important;
+	display: none !important;
 }

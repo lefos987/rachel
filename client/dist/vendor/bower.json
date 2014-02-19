@@ -5,7 +5,8 @@
     "angular": "latest",
     "angular-route": "latest",
     "foundation": "latest",
-    "angular-animate": "~1.2.12"
+    "angular-animate": "~1.2.12",
+    "angular-touch": "~1.2.13"
   },
   "devDependencies": {
     "angular-mocks": "latest"

@@ -253,43 +253,93 @@ angular.module('company', [])
 				],
 				img: [
 					{
-						value: 'assets/img/company/pf_img_square_capitol.jpg',
-						caption: 'Caption One'
+						value: 'assets/img/large/pf_img_capitol_1.jpg',
+						caption: 'Capital One First'
 					},
 					{
-						value: 'assets/img/company/pf_img_square_capitol.jpg',
-						caption: 'Caption One'
+						value: 'assets/img/large/pf_img_capitol_2.jpg',
+						caption: 'Capital One Second'
 					},
 					{
-						value: 'assets/img/company/pf_img_square_capitol.jpg',
-						caption: 'Caption One'
+						value: 'assets/img/large/pf_img_capitol_3.jpg',
+						caption: 'Capital One Third'
 					},
 					{
-						value: 'assets/img/company/pf_img_square_capitol.jpg',
-						caption: 'Caption One'
+						value: 'assets/img/large/pf_img_capitol_4.jpg',
+						caption: 'Capital One Fourth'
+					},
+					{
+						value: 'assets/img/large/pf_img_capitol_8.jpg',
+						caption: 'Capital One Fifth'
 					}
 				]
 			},
 			{
 				id: 'edsa',
-				title: 'EDSA',
-				text: '/company/edsa',
+				title: 'European Directories',
+				text: 'Develop a web presence platform for SME\'s around Europe. This platform includes ' +
+							'web, IYP, and mobile products with a focus on "Lead Generation" and "Lead ' +
+							'Conversion". The job also involved travelling to many of those countries in ' +
+							'the company portfolio, and directing/training the local teams from a design ' +
+							'perspective.',
+				roles: [
+					'Art direction',
+					'Concept visuals',
+					'Prototypes',
+					'User testing'
+				],
 				img: [
 					{
-						value: 'assets/img/company/pf_img_square_edsa.jpg',
-						caption: 'Caption One'
+						value: 'assets/img/large/pf_img_edsa_1.jpg',
+						caption: 'European Directories One'
 					},
 					{
-						value: 'assets/img/company/pf_img_square_edsa.jpg',
-						caption: 'Caption One'
+						value: 'assets/img/large/pf_img_edsa_2.jpg',
+						caption: 'European Directories Two'
 					},
 					{
-						value: 'assets/img/company/pf_img_square_edsa.jpg',
-						caption: 'Caption One'
+						value: 'assets/img/large/pf_img_edsa_3.jpg',
+						caption: 'European Directories Three'
 					},
 					{
-						value: 'assets/img/company/pf_img_square_edsa.jpg',
-						caption: 'Caption One'
+						value: 'assets/img/large/pf_img_edsa_4.jpg',
+						caption: 'European Directories Four'
+					}
+				]
+			},
+			{
+				id: 'es',
+				title: 'Evening Standard',
+				text: 'Concept re-design for London\'s free newspaper to be used on all devices.',
+				roles: [
+					'Design Lead',
+					'Concept Visuals',
+					'Agile'
+				],
+				img: [
+					{
+						value: 'assets/img/large/pf_img_es_1.jpg',
+						caption: 'Evening Standard One'
+					},
+					{
+						value: 'assets/img/large/pf_img_es_2.jpg',
+						caption: 'Evening Standard Two'
+					},
+					{
+						value: 'assets/img/large/pf_img_es_3.jpg',
+						caption: 'Evening Standard Three'
+					},
+					{
+						value: 'assets/img/large/pf_img_es_4.jpg',
+						caption: 'Evening Standard Four'
+					},
+					{
+						value: 'assets/img/large/pf_img_es_5.jpg',
+						caption: 'Evening Standard Five'
+					},
+					{
+						value: 'assets/img/large/pf_img_es_6.jpg',
+						caption: 'Evening Standard Six'
 					}
 				]
 			},
@@ -330,26 +380,26 @@ angular.module('company', [])
 				],
 				img: [
 					{
-						value: 'assets/img/company/pf_img_square_lloyds.jpg',
-						caption: 'Caption One'
+						value: 'assets/img/large/pf_img_lloyds_1.jpg',
+						caption: 'Lloyes One'
 					},
 					{
-						value: 'assets/img/company/pf_img_square_lloyds.jpg',
-						caption: 'Caption One'
+						value: 'assets/img/large/pf_img_lloyds_2.jpg',
+						caption: 'Lloyes Two'
 					},
 					{
-						value: 'assets/img/company/pf_img_square_lloyds.jpg',
-						caption: 'Caption One'
+						value: 'assets/img/large/pf_img_lloyds_3.jpg',
+						caption: 'Lloyes Three'
 					},
 					{
-						value: 'assets/img/company/pf_img_square_lloyds.jpg',
-						caption: 'Caption One'
+						value: 'assets/img/large/pf_img_lloyds_4.jpg',
+						caption: 'Lloyes Four'
 					}
 				]
 			},
 			{
 				id: 'ngrid',
-				title: 'ngrid',
+				title: 'National Grid Global Intranet',
 				text: 'Creating an intranet for all staff of the energy supplier\'s to contain information, ' +
 							'training, personnel, etc.',
 				roles: [
@@ -360,20 +410,52 @@ angular.module('company', [])
 				],
 				img: [
 					{
-						value: 'assets/img/company/pf_img_square_nggrid.jpg',
-						caption: 'Caption One'
+						value: 'assets/img/large/pf_img_ngrid_1.jpg',
+						caption: 'National Grid Global Intranet One'
 					},
 					{
-						value: 'assets/img/company/pf_img_square_nggrid.jpg',
-						caption: 'Caption One'
+						value: 'assets/img/large/pf_img_ngrid_2.jpg',
+						caption: 'National Grid Global Intranet Two'
 					},
 					{
-						value: 'assets/img/company/pf_img_square_nggrid.jpg',
-						caption: 'Caption One'
+						value: 'assets/img/large/pf_img_ngrid_3.jpg',
+						caption: 'National Grid Global Intranet Three'
 					},
 					{
-						value: 'assets/img/company/pf_img_square_nggrid.jpg',
-						caption: 'Caption One'
+						value: 'assets/img/large/pf_img_ngrid_4.jpg',
+						caption: 'National Grid Global Intranet Four'
+					},
+					{
+						value: 'assets/img/large/pf_img_ngrid_5.jpg',
+						caption: 'National Grid Global Intranet Five'
+					},
+					{
+						value: 'assets/img/large/pf_img_ngrid_6.jpg',
+						caption: 'National Grid Global Intranet Six'
+					},
+					{
+						value: 'assets/img/large/pf_img_ngrid_7.jpg',
+						caption: 'National Grid Global Intranet Seven'
+					},
+					{
+						value: 'assets/img/large/pf_img_ngrid_8.jpg',
+						caption: 'National Grid Global Intranet Eight'
+					},
+					{
+						value: 'assets/img/large/pf_img_ngrid_9.jpg',
+						caption: 'National Grid Global Intranet Nine'
+					},
+					{
+						value: 'assets/img/large/pf_img_ngrid_10.jpg',
+						caption: 'National Grid Global Intranet Ten'
+					},
+					{
+						value: 'assets/img/large/pf_img_ngrid_11.jpg',
+						caption: 'National Grid Global Intranet Eleven'
+					},
+					{
+						value: 'assets/img/large/pf_img_ngrid_12.jpg',
+						caption: 'National Grid Global Intranet Twelve'
 					}
 				]
 			},
@@ -392,20 +474,32 @@ angular.module('company', [])
 				],
 				img: [
 					{
-						value: 'assets/img/company/pf_img_square_tr.jpg',
-						caption: 'Caption One'
+						value: 'assets/img/large/pf_img_tr_1.jpg',
+						caption: 'Thompson Reuters One'
 					},
 					{
-						value: 'assets/img/company/pf_img_square_tr.jpg',
-						caption: 'Caption One'
+						value: 'assets/img/large/pf_img_tr_2.jpg',
+						caption: 'Thompson Reuters Two'
 					},
 					{
-						value: 'assets/img/company/pf_img_square_tr.jpg',
-						caption: 'Caption One'
+						value: 'assets/img/large/pf_img_tr_3.jpg',
+						caption: 'Thompson Reuters Three'
 					},
 					{
-						value: 'assets/img/company/pf_img_square_tr.jpg',
-						caption: 'Caption One'
+						value: 'assets/img/large/pf_img_tr_4.jpg',
+						caption: 'Thompson Reuters Four'
+					},
+					{
+						value: 'assets/img/large/pf_img_tr_6.jpg',
+						caption: 'Thompson Reuters Five'
+					},
+					{
+						value: 'assets/img/large/pf_img_tr_7.jpg',
+						caption: 'Thompson Reuters Six'
+					},
+					{
+						value: 'assets/img/large/pf_img_tr_8.jpg',
+						caption: 'Thompson Reuters Seven'
 					}
 				]
 			},
@@ -422,20 +516,40 @@ angular.module('company', [])
 				],
 				img: [
 					{
-						value: 'assets/img/company/pf_img_square_tui.jpg',
-						caption: 'Caption One'
+						value: 'assets/img//large/pf_img_tui_1.jpg',
+						caption: 'TUI One'
 					},
 					{
-						value: 'assets/img/company/pf_img_square_tui.jpg',
-						caption: 'Caption One'
+						value: 'assets/img//large/pf_img_tui_2.jpg',
+						caption: 'TUI Two'
 					},
 					{
-						value: 'assets/img/company/pf_img_square_tui.jpg',
-						caption: 'Caption One'
+						value: 'assets/img//large/pf_img_tui_3.jpg',
+						caption: 'TUI Three'
 					},
 					{
-						value: 'assets/img/company/pf_img_square_tui.jpg',
-						caption: 'Caption One'
+						value: 'assets/img//large/pf_img_tui_4.jpg',
+						caption: 'TUI Four'
+					},
+					{
+						value: 'assets/img//large/pf_img_tui_5.jpg',
+						caption: 'TUI Five'
+					},
+					{
+						value: 'assets/img//large/pf_img_tui_6.jpg',
+						caption: 'TUI Six'
+					},
+					{
+						value: 'assets/img//large/pf_img_tui_7.jpg',
+						caption: 'TUI Seven'
+					},
+					{
+						value: 'assets/img//large/pf_img_tui_8.jpg',
+						caption: 'TUI Eight'
+					},
+					{
+						value: 'assets/img//large/pf_img_tui_9.jpg',
+						caption: 'TUI Nine'
 					}
 				]
 			},
@@ -450,20 +564,28 @@ angular.module('company', [])
 				],
 				img: [
 					{
-						value: 'assets/img/company/pf_img_square_virgin.jpg',
-						caption: 'Caption One'
+						value: 'assets/img/large/pf_img_virgin_1.jpg',
+						caption: 'Virgin Media One'
 					},
 					{
-						value: 'assets/img/company/pf_img_square_virgin.jpg',
-						caption: 'Caption One'
+						value: 'assets/img/large/pf_img_virgin_2.jpg',
+						caption: 'Virgin Media Two'
 					},
 					{
-						value: 'assets/img/company/pf_img_square_virgin.jpg',
-						caption: 'Caption One'
+						value: 'assets/img/large/pf_img_virgin_3.jpg',
+						caption: 'Virgin Media Three'
 					},
 					{
-						value: 'assets/img/company/pf_img_square_virgin.jpg',
-						caption: 'Caption One'
+						value: 'assets/img/large/pf_img_virgin_4.jpg',
+						caption: 'Virgin Media Four'
+					},
+					{
+						value: 'assets/img/large/pf_img_virgin_5.jpg',
+						caption: 'Virgin Media Five'
+					},
+					{
+						value: 'assets/img/large/pf_img_virgin_6.jpg',
+						caption: 'Virgin Media Six'
 					}
 				]
 			}
