@@ -16,7 +16,4 @@ angular.module('app', ['templates', 'common', 'ngRoute', 'ngAnimate',
 				redirectTo: '/'
 			});
 		$locationProvider.html5Mode(true);
-	}])
-	.controller('AppCtrl', ['$scope', function ($scope) {
-		$scope.message = 'Hello World';
 	}]);
