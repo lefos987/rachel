@@ -550,6 +550,14 @@ angular.module('company', [])
 					{
 						value: 'assets/img//large/pf_img_tui_9.jpg',
 						caption: 'TUI Nine'
+					},
+					{
+						value: 'assets/img//large/pf_img_tui_10.jpg',
+						caption: 'TUI Ten'
+					},
+					{
+						value: 'assets/img//large/pf_img_tui_11.jpg',
+						caption: 'TUI Eleven'
 					}
 				]
 			},
